@@ -1,0 +1,2679 @@
+{
+  "context": {
+    "language": "fr",
+    "compositeOffer": "get",
+    "footprints": [
+      {
+        "_id": "55001",
+        "name": "Wallonie"
+      }
+    ]
+  },
+  "products": [
+    {
+      "_id": "54896",
+      "_name": "Configurateur",
+      "_weight": 0,
+      "name": "Configurateur",
+      "slug": "config",
+      "groupID": "54791",
+      "label": [],
+      "rules": [],
+      "price": {
+        "monthlyPrice": 0,
+        "deviceFee": 0,
+        "activationFee": 0,
+        "installationFee": 0
+      },
+      "productIDs": [
+        "54796",
+        "54801",
+        "54806",
+        "54821",
+        "54826",
+        "54831",
+        "54836",
+        "54846",
+        "54841",
+        "55436"
+      ],
+      "optionIDs": [
+        "54856",
+        "54851",
+        "54861",
+        "54871",
+        "54866",
+        "54876",
+        "54881",
+        "54886",
+        "54891",
+        "55441"
+      ],
+      "_footprints": []
+    },
+    {
+      "_id": "54901",
+      "_name": "Configurateur Netflix",
+      "_weight": 1,
+      "name": "Configurateur Netflix",
+      "slug": "configNfx",
+      "groupID": "54791",
+      "label": [],
+      "rules": [],
+      "price": {
+        "monthlyPrice": 0,
+        "deviceFee": 0,
+        "activationFee": 0,
+        "installationFee": 0
+      },
+      "productIDs": [
+        "54816",
+        "54811",
+        "54821",
+        "54826",
+        "54831",
+        "54836",
+        "54846",
+        "54841",
+        "55406"
+      ],
+      "optionIDs": [
+        "54856",
+        "54851",
+        "54861",
+        "54871",
+        "54866",
+        "54876",
+        "54881",
+        "54886",
+        "55441"
+      ],
+      "_footprints": []
+    },
+    {
+      "_id": "54796",
+      "_name": "Start Fiber",
+      "_weight": 2,
+      "name": "Internet illimité 200 Mbps",
+      "epcID": "AO006206",
+      "slug": "net-s",
+      "groupID": "54776",
+      "label": [],
+      "specs": {
+        "description": "\u003Cspan\u003EVitesse de téléchargement\u003C/span\u003E\u003Cbr\u003E\r\n\u003Cstrong\u003Ejusqu'à 200 Mbps\u003C/strong\u003E&nbsp;**\r\n\u003Cbr\u003E\u003Cbr\u003E\r\n\u003Cspan\u003EVitesse de chargement\u003C/span\u003E\u003Cbr\u003E\r\n\u003Cstrong\u003Ejusqu'à 15 Mbps\u003C/strong\u003E&nbsp;**",
+        "cardtitle": "200 Mbps",
+        "modal": "\u003Cp class=\"coh-style-paragraph-intro\"\u003E\u003Cstrong\u003EQuand choisir cette offre ?\u003C/strong\u003E\u003C/p\u003E\r\n\u003Cp\u003E\r\n    Cette offre internet est idéale pour une utilisation normale telle que par exemple un foyer de 2&nbsp;personnes : l’un consulte ses e-mails sur son ordinateur pendant que l’autre est en visioconférence.\r\n\u003C/p\u003E\r\n\u003Cp class=\"coh-style-paragraph-intro\"\u003E\u003Cstrong\u003ECette offre internet comprend :\u003C/strong\u003E\u003C/p\u003E\r\n\u003Cul class=\"coh-style-tick-list\"\u003E\r\n    \u003Cli\u003EUn internet avec volume de surf illimité\u003C/li\u003E\r\n    \u003Cli\u003ETéléchargement à 150 ou 200&nbsp;Mbps : téléchargez des fichiers, regardez des vidéos et travaillez de chez vous en toute tranquillité\u003C/li\u003E\r\n    \u003Cli\u003EChargement&nbsp;: une vitesse d'envoi de vos fichiers, photos, vidéos,… jusqu’à 15&nbsp;Mbps (en fonction de votre région)\u003C/li\u003E\r\n    \u003Cli\u003E\u003Cstrong\u003EDigital News \u003C/strong\u003E: Combinez notre offre internet avec un abonnement mobile et/ou TV et profitez d'un abonnement presse numérique à Sudinfo (inclus)\u003C/li\u003E\r\n\u003C/ul\u003E\r\n\u003Cp\u003E\r\n    \u003Csmall\u003E\r\n    *Réseau hybride fibre et coaxial, ne contenant pas que de la fibre. Vitesse de téléchargement jusqu’à 200 Mbps et vitesse d’envoi (upload) jusqu’à 15 Mbps (en fonction de votre région).\r\n    \u003C/small\u003E\r\n\u003C/p\u003E",
+        "cardsubtitle": "Start Fiber *",
+        "summarytitle": "200 Mbps"
+      },
+      "rules": [],
+      "price": {
+        "monthlyPrice": 51,
+        "deviceFee": 0,
+        "activationFee": 39,
+        "installationFee": 0
+      },
+      "productIDs": [],
+      "optionIDs": [],
+      "_footprints": []
+    },
+    {
+      "_id": "54801",
+      "_name": "Zen Fiber",
+      "_weight": 3,
+      "name": "Internet illimité 500 Mbps",
+      "epcID": "AO005017",
+      "slug": "net-m",
+      "groupID": "54776",
+      "label": [],
+      "specs": {
+        "description": "\u003Cspan\u003EVitesse de téléchargement\u003C/span\u003E\u003Cbr\u003E\r\n\u003Cstrong\u003Ejusqu'à 500 Mbps\u003C/strong\u003E&nbsp;**\r\n\u003Cbr\u003E\u003Cbr\u003E\r\n\u003Cspan\u003EVitesse de chargement\u003C/span\u003E\u003Cbr\u003E\r\n\u003Cstrong\u003Ejusqu'à 50 Mbps\u003C/strong\u003E&nbsp;**",
+        "cardtitle": "500 Mbps",
+        "modal": "\u003Cp class=\"coh-style-paragraph-intro\"\u003E\u003Cstrong\u003EQuand choisir cette offre ?\u003C/strong\u003E\u003C/p\u003E\r\n\r\n\u003Cp\u003E\r\n\tcette offre est idéale pour une utilisation plus intensive. Elle permet à 3 personnes de surfer simultanément : l’un consulte ses e-mails pendant que l’autre est en visioconférence et qu’une troisième personne regarde sa série préférée par exemple.\r\n\u003C/p\u003E\r\n\r\n\u003Cp class=\"coh-style-paragraph-intro\"\u003E\u003Cstrong\u003ECette offre comprend :\u003C/strong\u003E\u003C/p\u003E\r\n\r\n\u003Cul class=\"coh-style-tick-list\"\u003E\r\n\r\n\t\u003Cli\u003E\r\n\t\tUn internet avec volume de surf illimité\r\n\r\n\t\u003C/li\u003E\u003Cli\u003E\r\n\t\tUne vitesse de téléchargement à 400 ou 500&nbsp;Mbps : téléchargez des fichiers, regardez des vidéos et mettez à jour vos logiciels ultra rapidement\r\n\r\n\t\u003C/li\u003E\u003Cli\u003E\r\n\t\tChargement&nbsp;: une vitesse d'envoi de vos fichiers, photos, vidéos, … jusqu’à 50&nbsp;Mbps (en fonction de votre région)\r\n\r\n\u003C/li\u003E\r\n\u003Cli\u003E\u003Cstrong\u003EDigital News \u003C/strong\u003E: Combinez notre offre internet avec un abonnement mobile et/ou TV et profitez d'un abonnement presse numérique à Sudinfo (inclus)\u003C/li\u003E\r\n\u003C/ul\u003E\r\n\u003Cp\u003E\r\n    \u003Csmall\u003E\r\n\t\t* Réseau hybride fibre et coaxial, ne contenant pas que de la fibre. Vitesse de téléchargement jusqu’à 500 Mbps et vitesse d’envoi (upload) jusqu’à 50 Mbps (en fonction de votre région).\r\n    \u003C/small\u003E\r\n\u003C/p\u003E",
+        "cardsubtitle": "Zen Fiber *",
+        "summarytitle": "500 Mbps"
+      },
+      "rules": [],
+      "price": {
+        "monthlyPrice": 59,
+        "deviceFee": 0,
+        "activationFee": 39,
+        "installationFee": 0
+      },
+      "productIDs": [],
+      "optionIDs": [],
+      "_footprints": []
+    },
+    {
+      "_id": "54806",
+      "_name": "Giga Fiber",
+      "_weight": 4,
+      "name": "Internet illimité 1000 Mbps",
+      "epcID": "AO006172",
+      "slug": "net-l",
+      "groupID": "54776",
+      "label": [],
+      "specs": {
+        "description": "\u003Cspan\u003EVitesse de téléchargement\u003C/span\u003E\u003Cbr\u003E\r\n\u003Cstrong\u003Ejusqu'à 1000 Mbps\u003C/strong\u003E&nbsp;**\r\n\u003Cbr\u003E\u003Cbr\u003E\r\n\u003Cspan\u003EVitesse de chargement\u003C/span\u003E\u003Cbr\u003E\r\n\u003Cstrong\u003Ejusqu'à 50 Mbps\u003C/strong\u003E&nbsp;**",
+        "cardtitle": "1000 Mbps",
+        "modal": "\u003Cp class=\"coh-style-paragraph-intro\"\u003E\u003Cstrong\u003EQuand choisir cette offre ?\u003C/strong\u003E\u003C/p\u003E\r\n\u003Cp\u003E\r\n\tcette offre est idéale pour une utilisation encore plus intensive. Elle permet à plusieurs personnes de se connecter simultanément pour consulter leurs emails, regarder leurs séries préférées, télétravailler, jouer en ligne, envoyer des fichiers lourds, etc. Une connexion giga performante et stable pour un usage professionnel ou en famille.\r\n\u003C/p\u003E\r\n\u003Cp class=\"coh-style-paragraph-intro\"\u003E\u003Cstrong\u003Ecette offre comprend :\u003C/strong\u003E\u003C/p\u003E\r\n\u003Cul class=\"coh-style-tick-list\"\u003E\r\n\t\u003Cli\u003E\r\n\t\tUn internet avec volume de surf illimité\r\n\t\u003C/li\u003E\r\n\t\u003Cli\u003E\r\n\t\tUne vitesse de téléchargement jusqu’à 1000&nbsp;Mbps : idéal pour une utilisation intensive avec plus de 3 utilisateurs simultanés\r\n\t\u003C/li\u003E\r\n\t\u003Cli\u003E\r\n\t\tChargement&nbsp;: une vitesse d'envoi de vos fichiers, photos, vidéos,… jusqu’à 50&nbsp;Mbps (en fonction de votre région)\r\n    \u003C/li\u003E\r\n    \u003Cli\u003E\u003Cstrong\u003EDigital News \u003C/strong\u003E: Combinez notre offre internet avec un abonnement mobile et/ou TV et profitez d'un abonnement presse numérique à Sudinfo (inclus)\u003C/li\u003E\r\n\u003C/ul\u003E\r\n\u003Cp\u003E\r\n    \u003Csmall\u003E\r\n\t* Réseau hybride fibre et coaxial, ne contenant pas que de la fibre. Vitesse de téléchargement jusqu’à 1000 Mbps et vitesse d’envoi (upload) jusqu’à 50 Mbps (en fonction de votre région). \r\n    \u003C/small\u003E\r\n\u003C/p\u003E",
+        "cardsubtitle": "Giga Fiber *",
+        "summarytitle": "1000 Mbps"
+      },
+      "rules": [],
+      "price": {
+        "monthlyPrice": 69,
+        "deviceFee": 0,
+        "activationFee": 39,
+        "installationFee": 0
+      },
+      "productIDs": [],
+      "optionIDs": [],
+      "_footprints": []
+    },
+    {
+      "_id": "55406",
+      "_name": "Start Fiber Netflix",
+      "_weight": 5,
+      "name": "Internet illimité 200 Mbps + Netflix",
+      "epcID": "NO_FUNNEL",
+      "slug": "net-s-netflix",
+      "groupID": "54776",
+      "label": [],
+      "specs": {
+        "description": "\u003Cspan\u003EVitesse de téléchargement\u003C/span\u003E\u003Cbr\u003E\r\n\u003Cstrong\u003Ejusqu'à 200 Mbps\u003C/strong\u003E&nbsp;**\r\n\u003Cbr\u003E\u003Cbr\u003E\r\n\u003Cspan\u003EVitesse de chargement\u003C/span\u003E\u003Cbr\u003E\r\n\u003Cstrong\u003Ejusqu'à 15 Mbps\u003C/strong\u003E&nbsp;**",
+        "extrainfo": "\u003Cimg class=\"netflix\" src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN8AAAA8CAYAAADmKW8AAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAzJSURBVHgB7Z0LcFxVGce/79xNNmmSvtJ3u9lNk+yjTVv6GEaRl4AoI+MLWpCioFQFZkRRmFHHgaIOOjqI6PgYoDMyYMG2lLcCKg0t6CAUaAPJbhKabB5NQ9s0aclrc+/5/O6WYqB77+Zx7+42Pb9pc3bv+TabvXv+53z3fOd8F0ChUCgUCoVCoVAoFJMVBIepXxQ+36oOtYF4OB5vhjS8M2PxtERR/kobk8OR9mitVWX9wsVBwPwF4DDCkG+FOhsOjTxW6/NVeKjIBy6heYyeYEvjmyOPRWeFSqgAV4ML8HmtGfmc+GNHF4XPtbLXwBgItje+Ag5i14ZSnY8PXhcIBEAvCIANte3RXesADEjDG4HA9AK94AxbIzpWG+noOAzjxAMOEvWFFoCQO6zqCfJruPgkpGGoRDtToHzeqp57jE1cbLD8BZp2J6K8DByGPMYlXDz7obcShbcjyK+ASxiEj3HxpQ/9HdP0ZahrO8Bx6CD/mDPySP3ixRXc6Vi+lwQ0hWDXUY6JPRUVc1C3eT8Jz3HxmVR1BTrMHdTkC2gzqCxdGLwIOhr+BWkohLw7QJM3WdUTUL/RP60CoAPGi4AMIgDPeWt2YB4oFC5Q3t7yCiC9aGcjNLoJ0vDW/MVlQHijrRHB1uqDdQdgAmRUfGSOSUX5XwOFwiXYn7zXrh4RL26Y74/Y2XjytCshjVdoGHg3TJCMis8EJV0OCoVLzBo4+iR38j02JgV6vvcbYAfiDfb18Gp1R8MemCAZFx9/sFUtfn85KBQuMK+rq4/F96idDV8QXrNlyZL8VHV1ZVWf4iJg93qS8HtwgMyLjxkU+VeDQuEWKB+0rQaYuaJPvzBVnQDaAPZ0F4jEE+AAWREfGvhlUChcYklLkznpErOzIaTvfvRY/bxwAFCsBVvo8fKWlh5wAEdDDaOFECL1/vDHI/HofyAbEG7lk98GY0RKPOk1moS/SQEHrV6DREvZ1f60VT27SOa0+htW9RqSZTzTGnqTAF+AMYIg+mDSQDz64c8sayVesKdi+ZwV7+x998Qx9CZHPfvY97D+S3CIrIjPBMH4IhdZEZ8mjE1VLU3PgQOE2hoe4eIRq/o6f+UGDrFYig8Jnwy3xn4DDsIN66VIW8P34TRGG6J7dS9yDBbyUtUjgserD3yLH/7UfL4x6QVSusuhHeH9zTFwiKy4nSbc419BLqywUShMqg40sTeCL9vZEIkvnHh8ua/yUi78tvYID4CDZE18CFjW7AueDQqFa8j77GoRaVVTWegT5mMPateBLRg7ovdvAQfJmvhMhgWsBYXCJWYMFj6RJuYHBtJVexaUh9j//xzY86uz2tsHwEGyKj4+MdfXLwyXgkLhAvO69vaxh2Ubk+M2eHV+Xt5ddjZ8bdRDOj4ODpNV8TF5QsgrQaFwiWGR+B0lNWbJVBbXZ8GepyId0XHvXrAi2+IDEmq5mcI9ljU3d3ErexEmABrkyIqWj5J18fFHO/d1cyuSQuESHkF/gPFCUOv0fsUT5ID4QBRqdA0oFC4xZbDvmXQTL1awZ/ZrcImsBdlHgpR0PX8OOQYlY7G21wu5iUbBel/VtaMxHUbYuby1cR9MYhZ2dvbH/EWbCMSYFh5wXK9rxsDRreASOSE+buOrGn2+iqq2tncgA+iEd0b9wVtZ9R4+w3loLiwCmsJVhQhUmFxoxE04BtgA8dgaOMVAwovZp7l4NLZ5SOb+ykktPpNhko97cGzi40HhGXOXBLhEjoiPw6FYuJ6Ln0AGYLGtSj6g4wtsaMTgRiMW3RDIAlBMCqpb970U81fV8fe7ZNQvMsQ94CK5cM2XhJu/2umgcBUdYPOojYn+G26P7QUXyaj4MLnLnwYsKsP1/oqzQKFwCaFrf+IiMRpbneg2cJlM53CRLEDLzFGI4vOgULjE8UC5TJu5jHm7us2ZXS92ZD6HC8HTlpUk1E4HhatwB/+PdDaS8EHIABkXn2H0b2OVDaauJX99oPJcUChcQhKtT2ejIS2CDJDx2c7ajo6eFf7gDh7hLklVLyT+UALcBRmCmGRiC0xej5oTn/KDSoRBOBUhqOVPMqolVQbKRjhNiC0Knslf9mgyfV99YO7cH7gZZjDJSqiB42ybuXdJKT72Cy5ApAfcDG0LoMs1zfinkHLo8KxS41hJCZ1fU5NMIX5KBtU/gim8SFvDt0HxIUij74zmqoYbwPQe79TrALp+Cy6SFfElxNDThZRvzjqlSt+WJwjXuqkAFvd7Ffv29SaftLSAYvLTuLBykQGjT9zFIeBruXBVfFmJ861saelh/26nVT37fReBQuEgugDzfhqjnsxDwJVR32JXVzdlLcguQTxsVcdnqAQUCofYYubMEuKbMFZQczXTQtbEl8Ch7ZYBd4XCQarLguspTRbqlCBuaKys9IJLZE18K5OJR7EGFAqXEQLGm0Zxpp4Y3QL18ZDVtZ1SyqdAoXCRxrLKpTx9uRzGCburaeOC4/7dkEX625ruJ8BuUChcQkdtQikgOGxz6RvTA9PBBbIqvjXmXk6SD4FC4QJ1vopqBDrPzgYRzFl3u8hWUcHUPFfuPJz1LUVS0HZQKFxAQ+3WdDYk8UfpEixx2GEduEDWN9NGWpp2xQLBd7nvmQOKU5Fp0bLQWk0zeocMrQ91o58EHUvo2FtSDEcrm5oS2Vg11DS3Ys4wwFW2gT2E2nA89nKTL3gPxwHPt7E7O7qgPOTkfRpMsi4+PjkyKnn0Q7weMoRu4MxaX2WFpudN8+TppUQ4UyKxX48zEGkmkChBlNO4yZRQ8hgUc+spIBBfj8Sj/wbFSMoBaYshBXiQzPVJyYMeDcAYBmrwBxNRhKNcdZg1aCYx6pMEfSC1H0fao+O4A9PoMAq0tZimfWt0fAVLRVvDk7GyqnZug5YLqtGTdwU4nGkhJ9JI6Ci2eoAyJj4UuDnPlH2+wcF+hOP/TvSRmNz3RO8fNznRbSMOTwXFWDDl6OUTOJvL2SdOqJmVCrVhc2Ora+Lj97sljUG3bvQ9lvx7eACoB9zE5e2W5gjXRmeF7g4fih0Dh8iJNBKD8eJdfLIczwisOD2pD1SZazgDdjbcAWyPdHR80OYShrwfYMSOlpMpp0J5GThITohvDezmWU/KyAZGxeRHEN6UziYh5S9GPl/R0dTOyquxew0KcDS/bM4kUGK372lQKCbI2xxUZy/qY3Y27AvvXNbWdFKaSgHyL2ALnhebH5wFDpEz4hsu9uxiz/oIKBQTQENMu5SMJ9dSbhXSjsE2LnptXooyH8a+QNuCnMnbWV1Xl6jzVz3CvcENMAkxJ20wuWv++GNhZjQA8yKDxjwNb5C3PQ/0u63qpTB2wWlIfSAQYGWts904hPBqpKXx0VRVVd1NR6PFoYf5i7Kc/ENK7gm8ExwgZ8RnIkBs5aaZG+IzhYL4Hs97HmGhdLNSulCjQzBG+hN9m0u93m2Hh4YSBTNm6EvXrdNh48YJxb2q99W1cvE9yABL9u1rjPpCC0EMehPo9QqgAo2o0IPglSSmEMkpILCEe5GpHLIpEhqUSINDNBqUCgKeHTYzgWMxu3ozJEIp9zzF5v3QwQ1k/u0sriI7E0Oi7QZZQ6PNmgTrmXek6rd9wXOWtjVMuIPLKfGF4rGdMX/QbOCO+dUj4Q5xiCW1n7/8mAFwiBsRu7ksKBSHOb7XrSMcwmHjgIfEkV7Z1726s3NgogHiNZ2d/Vz0J590dgILD041wm2x/eAQBBtF19w/Fh6SpSnHJ2+vZ4CK5Db+jkrY2GwHfv7mzBuo2sbLX59XOZs7SdsMCOx5dCxpbbBNnLu0uWFXvT9Yx29mmdlaw+S9RSaX+MykujGAB/kE3gwT488S5N857turSdqfb9BBGsbeioivG2tqdFBkDYSNEro4yM4/UpGMox36/+3CzexWu+fPL5xZUDBbH/bMo2To8GSmeLVqSbKZJ+5YrBabsRG3o304IQmP2H/luN4dlgaI619bvfqWNbt3D8MEyCnxJUG4l0enm83JFz6RXez9xdmt6UKgTjCgxRAYJ6Pf9n5pkdbG1DOnXRm5D4vCQZKex3HvIf7+/5SE47EdXCwzH0dDoRLubANSl3O4gS8wQJZrIJZKkRjV7b4MHLpPo/zbCFGzMCkt7nrvQi6fhQmQc+ILtTRE95aVzVze2qpmPhXjIhxLrkIZ9+qZJfF4Z30g+BBK+iqPcqndXQ/cCBMUn6PZoaPmHWYFdfBkheRe410euZqBZIzLuI6yVUhoj7Q1PQ8KxSnAa/NXTynK7zlDkFbBSllByetACvBYHDLXGnoxMa88mZFhfDgrvlmhElmo+8WAJ+7kGjiFIpeg1avzokf6woNysG3lBMSnUCgUCoVCoVAoFIrJy/8AooNnsCQr7M4AAAAASUVORK5CYII=\" alt=\"Netflix logo\"\u003E\u003Cbr\u003E\r\n\u003Cspan\u003E2 écrans\u003C/span\u003E\u003Cbr\u003E\r\n\u003Cspan\u003EQualité Full HD\u003C/span\u003E",
+        "cardtitle": "200 Mbps",
+        "modal": "\u003Cp class=\"coh-style-paragraph-intro\"\u003E\u003Cstrong\u003EQuand choisir cette offre ?\u003C/strong\u003E\u003C/p\u003E\r\n\u003Cp\u003E\r\n    Cette offre est idéale pour une utilisation normale telle que par exemple un foyer de 2&nbsp;personnes : l’un consulte ses e-mails sur son ordinateur pendant que l’autre est en visioconférence.\r\n\u003C/p\u003E\r\n\u003Cp class=\"coh-style-paragraph-intro\"\u003E\u003Cstrong\u003ECette offre comprend :\u003C/strong\u003E\u003C/p\u003E\r\n\u003Cul class=\"coh-style-tick-list\"\u003E\r\n    \u003Cli\u003EUn internet avec volume de surf illimité\u003C/li\u003E\r\n    \u003Cli\u003ETéléchargement à 150 ou 200&nbsp;Mbps : téléchargez des fichiers, regardez des vidéos et travaillez de chez vous en toute tranquillité\u003C/li\u003E\r\n    \u003Cli\u003EChargement&nbsp;: une vitesse d'envoi de vos fichiers, photos, vidéos,… jusqu’à 15&nbsp;Mbps (en fonction de votre région)\u003C/li\u003E\r\n\u003C/ul\u003E\r\n\u003Cp\u003E\r\n    \u003Csmall\u003E\r\n    * Réseau hybride fibre et coaxial, ne contenant pas que de la fibre. Vitesse de téléchargement jusqu’à 200 Mbps et vitesse d’envoi (upload) jusqu’à 15 Mbps (en fonction de votre région).\r\n    \u003C/small\u003E\r\n\u003C/p\u003E\r\n\r\n\u003Cp class=\"coh-style-paragraph-intro\"\u003E\u003Cstrong\u003EL'option Netflix c’est :\u003C/strong\u003E\u003C/p\u003E\r\n\u003Cul class=\"coh-style-tick-list\"\u003E\r\n    \u003Cli\u003EAbonnement \u003Cstrong\u003ENetflix Standard\u003C/strong\u003E\u003C/li\u003E\r\n    \u003Cli\u003E2 écrans en simultané\u003C/li\u003E\r\n    \u003Cli\u003EQualité Full HD\u003C/li\u003E\r\n    \u003Cli\u003EDirectement intégré à votre facture Orange\u003C/li\u003E\r\n    \u003Cli\u003ESans engagement\u003C/li\u003E\r\n\u003C/ul\u003E\r\n\u003Cp\u003E\u003Cstrong\u003EBon à savoir :\u003C/strong\u003E Modifiez facilement votre option Netflix (pour Netflix Essentiel ou Netflix Premium) depuis votre Espace Client\u003C/p\u003E\r\n",
+        "cardsubtitle": "Start Fiber * + Netflix",
+        "summarytitle": "200 Mbps + Netflix standard"
+      },
+      "rules": [],
+      "price": {
+        "monthlyPrice": 65.99,
+        "deviceFee": 0,
+        "activationFee": 39,
+        "installationFee": 0
+      },
+      "productIDs": [],
+      "optionIDs": [],
+      "_footprints": []
+    },
+    {
+      "_id": "54816",
+      "_name": "Zen Fiber Netflix",
+      "_weight": 6,
+      "name": "Internet illimité 500 Mbps + Netflix",
+      "epcID": "NO_FUNNEL",
+      "slug": "net-m-netflix",
+      "groupID": "54776",
+      "label": [],
+      "specs": {
+        "description": "\u003Cspan\u003EVitesse de téléchargement\u003C/span\u003E\u003Cbr\u003E\r\n\u003Cstrong\u003Ejusqu'à 500 Mbps\u003C/strong\u003E&nbsp;**\r\n\u003Cbr\u003E\u003Cbr\u003E\r\n\u003Cspan\u003EVitesse de chargement\u003C/span\u003E\u003Cbr\u003E\r\n\u003Cstrong\u003Ejusqu'à 50 Mbps\u003C/strong\u003E&nbsp;**",
+        "extrainfo": "\u003Cimg class=\"netflix\" src=\"data:image/png;base64,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\" alt=\"Netflix logo\"\u003E\u003Cbr\u003E\r\n\u003Cspan\u003E2 écrans\u003C/span\u003E\u003Cbr\u003E\r\n\u003Cspan\u003EQualité Full HD\u003C/span\u003E",
+        "cardtitle": "500 Mbps",
+        "modal": "\u003Cp class=\"coh-style-paragraph-intro\"\u003E\u003Cstrong\u003EQuand choisir cette offre ?\u003C/strong\u003E\u003C/p\u003E\r\n\r\n\u003Cp\u003E\r\n    Cette offre est idéale pour une utilisation plus intensive. Elle permet à 3 personnes de surfer simultanément : l’un consulte ses e-mails pendant que l’autre est en visioconférence et qu’une troisième personne regarde sa série préférée par exemple.\r\n\u003C/p\u003E\r\n\r\n\u003Cp class=\"coh-style-paragraph-intro\"\u003E\u003Cstrong\u003ECette offre contient :\u003C/strong\u003E\u003C/p\u003E\r\n\r\n\u003Cul class=\"coh-style-tick-list\"\u003E\r\n    \u003Cli\u003E\r\n        Un internet avec volume de surf illimité\r\n\r\n    \u003C/li\u003E\u003Cli\u003E\r\n        Une vitesse de téléchargement à 400 ou 500&nbsp;Mbps : téléchargez des fichiers, regardez des vidéos et mettez à jour vos logiciels ultra rapidement\r\n\r\n    \u003C/li\u003E\u003Cli\u003E\r\n        Chargement&nbsp;: une vitesse d'envoi de vos fichiers, photos, vidéos, … jusqu’à 50&nbsp;Mbps (en fonction de votre région)\r\n\r\n\u003C/li\u003E\u003C/ul\u003E\r\n\u003Cp\u003E\r\n    \u003Csmall\u003E\r\n        * Réseau hybride fibre et coaxial, ne contenant pas que de la fibre. Vitesse de téléchargement jusqu’à 500 Mbps et vitesse d’envoi (upload) jusqu’à 50 Mbps (en fonction de votre région).\r\n    \u003C/small\u003E\r\n\u003C/p\u003E\r\n\r\n\u003Cp class=\"coh-style-paragraph-intro\"\u003E\u003Cstrong\u003EL’offre Netflix c’est :\u003C/strong\u003E\u003C/p\u003E\r\n\u003Cul class=\"coh-style-tick-list\"\u003E\r\n    \u003Cli\u003EAbonnement \u003Cstrong\u003ENetflix Standard\u003C/strong\u003E\u003C/li\u003E\r\n    \u003Cli\u003E2 écrans en simultané\u003C/li\u003E\r\n    \u003Cli\u003EQualité Full HD\u003C/li\u003E\r\n    \u003Cli\u003EDirectement intégré à votre facture Orange\u003C/li\u003E\r\n    \u003Cli\u003ESans engagement\u003C/li\u003E\r\n\u003C/ul\u003E\r\n\u003Cp\u003E\u003Cstrong\u003EBon à savoir :\u003C/strong\u003E Modifiez facilement votre offre Netflix (pour Netflix Essentiel ou Netflix Premium) depuis votre Espace Client\u003C/p\u003E",
+        "cardsubtitle": "Zen Fiber * + Netflix",
+        "summarytitle": "500 Mbps + Netflix standard"
+      },
+      "rules": [],
+      "price": {
+        "monthlyPrice": 73.99,
+        "deviceFee": 0,
+        "activationFee": 39,
+        "installationFee": 0
+      },
+      "productIDs": [],
+      "optionIDs": [],
+      "_footprints": []
+    },
+    {
+      "_id": "54811",
+      "_name": "Giga Fiber Netflix",
+      "_weight": 7,
+      "name": "Internet illimité 1 Gbps + Netflix",
+      "epcID": "NO_FUNNEL",
+      "slug": "net-l-netflix",
+      "groupID": "54776",
+      "label": [],
+      "specs": {
+        "description": "\u003Cspan\u003EVitesse de téléchargement\u003C/span\u003E\u003Cbr\u003E\r\n\u003Cstrong\u003Ejusqu'à 1000 Mbps\u003C/strong\u003E&nbsp;**\r\n\u003Cbr\u003E\u003Cbr\u003E\r\n\u003Cspan\u003EVitesse de chargement\u003C/span\u003E\u003Cbr\u003E\r\n\u003Cstrong\u003Ejusqu'à 50 Mbps\u003C/strong\u003E&nbsp;**",
+        "extrainfo": "\u003Cimg class=\"netflix\" src=\"data:image/png;base64,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\" alt=\"Netflix logo\"\u003E\u003Cbr\u003E\r\n\u003Cspan\u003E2 écrans\u003C/span\u003E\u003Cbr\u003E\r\n\u003Cspan\u003EQualité Full HD\u003C/span\u003E",
+        "cardtitle": "1000 Mbps",
+        "modal": "\u003Cp class=\"coh-style-paragraph-intro\"\u003E\u003Cstrong\u003EQuand choisir cette offre ?\u003C/strong\u003E\u003C/p\u003E\r\n\u003Cp\u003E\r\n    Cette offre est idéale pour une utilisation encore plus intensive. Elle permet à plusieurs personnes de se connecter simultanément pour consulter leurs emails, regarder leurs séries préférées, télétravailler, jouer en ligne, envoyer des fichiers lourds, etc. Une connexion giga performante et stable pour un usage professionnel ou en famille.\r\n\u003C/p\u003E\r\n\u003Cp class=\"coh-style-paragraph-intro\"\u003E\u003Cstrong\u003ECette offre contient :\u003C/strong\u003E\u003C/p\u003E\r\n\u003Cul class=\"coh-style-tick-list\"\u003E\r\n    \u003Cli\u003E\r\n        Un internet avec volume de surf illimité\r\n    \u003C/li\u003E\r\n    \u003Cli\u003E\r\n        Une vitesse de téléchargement jusqu’à 1000&nbsp;Mbps : idéal pour une utilisation intensive avec plus de 3 utilisateurs simultanés\r\n    \u003C/li\u003E\r\n    \u003Cli\u003E\r\n        Chargement&nbsp;: une vitesse d'envoi de vos fichiers, photos, vidéos,… jusqu’à 50&nbsp;Mbps (en fonction de votre région)\r\n    \u003C/li\u003E\r\n\u003C/ul\u003E\r\n\u003Cp\u003E\r\n    \u003Csmall\u003E\r\n    * Réseau hybride fibre et coaxial, ne contenant pas que de la fibre. Vitesse de téléchargement jusqu’à 1000 Mbps et vitesse d’envoi (upload) jusqu’à 50 Mbps (en fonction de votre région).\r\n    \u003C/small\u003E\r\n\u003C/p\u003E\r\n\r\n\u003Cp class=\"coh-style-paragraph-intro\"\u003E\u003Cstrong\u003EL’offre Netflix c’est :\u003C/strong\u003E\u003C/p\u003E\r\n\u003Cul class=\"coh-style-tick-list\"\u003E\r\n    \u003Cli\u003EAbonnement \u003Cstrong\u003ENetflix Standard\u003C/strong\u003E\u003C/li\u003E\r\n    \u003Cli\u003E2 écrans en simultané\u003C/li\u003E\r\n    \u003Cli\u003EQualité Full HD\u003C/li\u003E\r\n    \u003Cli\u003EDirectement intégré à votre facture Orange\u003C/li\u003E\r\n    \u003Cli\u003ESans engagement\u003C/li\u003E\r\n\u003C/ul\u003E\r\n\u003Cp\u003E\u003Cstrong\u003EBon à savoir :\u003C/strong\u003E Modifiez facilement votre offre Netflix (pour Netflix Essentiel ou Netflix Premium) depuis votre Espace Client\u003C/p\u003E",
+        "cardsubtitle": "Giga Fiber * + Netflix",
+        "summarytitle": "1000 Mbps + Netflix standard"
+      },
+      "rules": [],
+      "price": {
+        "monthlyPrice": 83.99,
+        "deviceFee": 0,
+        "activationFee": 39,
+        "installationFee": 0
+      },
+      "productIDs": [],
+      "optionIDs": [],
+      "_footprints": []
+    },
+    {
+      "_id": "54821",
+      "_name": "Mobile Child",
+      "_weight": 8,
+      "name": "Mobile Child",
+      "epcID": "CO003073",
+      "slug": "mob-xs",
+      "groupID": "54781",
+      "label": [],
+      "specs": {
+        "description": "150 minutes\u003Cbr/\u003E\r\nSMS illimités\u003Cbr/\u003E\r\nOrange Mobile Serenity Plus",
+        "cardtitle": "2 GB",
+        "modal": "\u003Cp\u003E\r\n    \u003Csmall\u003E\r\n        Un maximum de 2 cartes Child est autorisé par compte client. Cet abonnement mobile ne peut être pris qu’à partir de la 2e carte, la première étant une carte Orange Mobile Small, Medium ou Large.\r\n    \u003C/small\u003E\r\n\u003C/p\u003E\t\t\t\r\n\r\n\r\n\u003Cp class=\"coh-style-paragraph-intro\"\u003E\u003Cstrong\u003EInclus dans votre abonnement Orange Mobile Child\u003C/strong\u003E\u003C/p\u003E\r\n\u003Cul class=\"coh-style-tick-list\"\u003E\r\n    \u003Cli\u003E\r\n        \u003Cstrong\u003E2 GB\u003C/strong\u003E de data par mois\r\n        \u003Cbr\u003E\r\n        \u003Csmall\u003EData garantie en continu : En Belgique et en EU, à partir de 2 GB, vous pourrez continuer à surfer à une vitesse de 512 kbps\u003C/small\u003E\r\n    \u003C/li\u003E\r\n    \u003Cli\u003E\u003Cstrong\u003E150 minutes\u003C/strong\u003E d'appels\u003C/li\u003E\r\n    \u003Cli\u003E\u003Cstrong\u003ESMS illimités\u003C/strong\u003E\u003C/li\u003E\r\n    \u003Cli\u003E\u003Cstrong\u003EOrange Mobile Serenity Plus Child\u003C/strong\u003E(Valeur 3 €/mois)\u003Cbr\u003EPack combinant une solution de sécurité intégrée au réseau mobile Orange avec une application mobile ‘Mobile Serenity Plus Child’. Grâce à cette solution, votre enfant est protégé lorsqu’il navigue sur internet via les réseaux mobiles 4G/5G d'Orange, un réseau WIFI et à l'étranger. Votre enfant est alerté et bloqué lorsqu’il tente d’accéder à un site reconnu malveillant par Orange. Vous pouvez également bloquer certaines catégories de sites (sites violents, sites de jeu, sites pour adultes,...) et d’applications auxquels vous souhaitez que votre enfant n’accède pas et paramétrer des temps de connexion et de déconnexion à internet.\u003C/li\u003E\r\n\u003C/ul\u003E\r\n\r\n\u003Cp\u003E&nbsp;\u003C/p\u003E\r\n\r\n\u003Cp class=\"coh-style-paragraph-intro\"\u003E\u003Cstrong\u003EÀ et vers l’étranger\u003C/strong\u003E\u003C/p\u003E\r\n\u003Cp\u003E\u003Cstrong\u003EDans l’UE :\u003C/strong\u003E vous utilisez vos volumes d'appels, de SMS et de surf inclus dans votre abonnement.\u003C/p\u003E\r\n\u003Cp\u003E\u003Cstrong\u003EEn dehors de l’UE :\u003C/strong\u003E voici \u003Ca href=\"/fr/options-et-services/international-roaming/tarifs\"\u003Eles tarifs internationaux\u003C/a\u003E qui sont d’application.\u003C/p\u003E\r\n\u003Cp\u003E\u003Cstrong\u003EPour tous les appels depuis la Belgique vers et hors UE :\u003C/strong\u003E nos \u003Ca href=\"/fr/options-et-services/international-roaming/tarifs\"\u003Etarifs internationaux\u003C/a\u003E sont d’application.\u003C/p\u003E\r\n\r\n\u003Cp\u003E&nbsp;\u003C/p\u003E\r\n\r\n\u003Cp class=\"coh-style-paragraph-intro\"\u003E\u003Cstrong\u003EOptions comprises dans vos abonnements\u003C/strong\u003E\u003C/p\u003E\r\n\u003Cp\u003E\u003Cstrong\u003ERéseau 5G\u003C/strong\u003E\u003Cbr /\u003E\r\nSurfez gratuitement sur le réseau 5G, selon sa disponibilité. Attention, votre smartphone doit aussi être compatible.\u003C/p\u003E\r\n\u003Cp\u003E\u003Cstrong\u003EData control\u003C/strong\u003E\u003Cbr /\u003E\r\nGardez un œil sur votre consommation de data via l'app My Orange.\u003C/p\u003E\r\n\u003Cp\u003E\u003Cstrong\u003EPro inclusive\u003C/strong\u003E\u003Cbr /\u003E\r\nProfitez gratuitement d’options telles que le transfert d’appels, la possibilité d’être en ligne avec deux correspondants, ou encore les téléconférences jusqu’à 6&nbsp;personnes.\u003C/p\u003E\r\n"
+      },
+      "rules": [
+        {
+          "type": "hasProduct",
+          "parameters": [
+            "54826",
+            "54831",
+            "54836"
+          ]
+        },
+        {
+          "type": "itemNumber",
+          "parameters": [1, 2, 3, 4]
+        }
+      ],
+      "price": {
+        "monthlyPrice": 5,
+        "deviceFee": 0,
+        "activationFee": 0,
+        "installationFee": 0
+      },
+      "productIDs": [],
+      "optionIDs": [],
+      "_footprints": []
+    },
+    {
+      "_id": "54826",
+      "_name": "Mobile Small",
+      "_weight": 9,
+      "name": "Mobile Small",
+      "epcID": "CO003074",
+      "slug": "mob-s",
+      "groupID": "54781",
+      "label": [],
+      "specs": {
+        "description": "Appels et SMS illimités\u003Cbr/\u003E\r\nOrange Mobile Serenity Plus\u003Cbr/\u003E\r\n&nbsp;",
+        "cardtitle": "10 GB",
+        "modal": "\u003Cp class=\"coh-style-paragraph-intro\"\u003E\u003Cstrong\u003EInclus dans votre abonnement Orange Mobile Small\u003C/strong\u003E\u003C/p\u003E\r\n\u003Cul class=\"coh-style-tick-list\"\u003E\r\n    \u003Cli\u003E\r\n        \u003Cstrong\u003E10 GB\u003C/strong\u003E de data par mois\r\n        \u003Cbr\u003E\r\n        \u003Csmall\u003EData garantie en continu : En Belgique et en EU, à partir de 10 GB, vous pourrez continuer à surfer à une vitesse de 512 kbps\u003C/small\u003E\r\n    \u003C/li\u003E\r\n    \u003Cli\u003EAppels & SMS\u003Cstrong\u003E illimités\u003C/strong\u003E\u003C/li\u003E\r\n    \u003Cli\u003E\u003Cstrong\u003EOrange Mobile Serenity Plus \u003C/strong\u003E(Valeur 3 €/mois)\u003Cbr\u003EPack combinant une solution de sécurité intégrée au réseau mobile Orange. Elle protège votre navigation sur le réseau 4G/5G en Belgique et à l'étranger, sur le WIFI privé ou public, alerte sur les sites malveillants, et bloque les sites indésirables. Détecte des applications ou fichiers malveillants, dispose d’un portail de gestion en ligne.\u003C/li\u003E\r\n\u003C/ul\u003E\r\n\r\n\u003Cp\u003E&nbsp;\u003C/p\u003E\r\n\r\n\u003Cp class=\"coh-style-paragraph-intro\"\u003E\u003Cstrong\u003EÀ et vers l’étranger\u003C/strong\u003E\u003C/p\u003E\r\n\u003Cp\u003E\u003Cstrong\u003EDans l’UE :\u003C/strong\u003E vous utilisez vos volumes d'appels, de sms et de surf inclus dans votre abonnement.\u003C/p\u003E\r\n\u003Cp\u003E\u003Cstrong\u003EEn dehors de l’UE :\u003C/strong\u003E voici \u003Ca href=\"/fr/options-et-services/international-roaming/tarifs\"\u003Eles tarifs internationaux\u003C/a\u003E qui sont d’application.\u003C/p\u003E\r\n\u003Cp\u003E\u003Cstrong\u003EPour tous les appels depuis la Belgique vers et hors UE :\u003C/strong\u003E nos \u003Ca href=\"/fr/options-et-services/international-roaming/tarifs\"\u003Etarifs internationaux\u003C/a\u003E sont d’application.\u003C/p\u003E\r\n\r\n\u003Cp\u003E&nbsp;\u003C/p\u003E\r\n\r\n\u003Cp class=\"coh-style-paragraph-intro\"\u003E\u003Cstrong\u003EOptions comprises dans vos abonnements\u003C/strong\u003E\u003C/p\u003E\r\n\u003Cp\u003E\u003Cstrong\u003ERéseau 5G\u003C/strong\u003E\u003Cbr /\u003E\r\nSurfez gratuitement sur le réseau 5G (jusqu'à 400 Mbps), selon sa disponibilité. Attention, votre smartphone doit aussi être compatible.\u003C/p\u003E\r\n\u003Cp\u003E\u003Cstrong\u003EData control\u003C/strong\u003E\u003Cbr /\u003E\r\nGardez un œil sur votre consommation de data via l'app My Orange.\u003C/p\u003E\r\n\u003Cp\u003E\u003Cstrong\u003EPro inclusive\u003C/strong\u003E\u003Cbr /\u003E\r\nProfitez gratuitement d’options telles que le transfert d’appels, la possibilité d’être en ligne avec deux correspondants, ou encore les téléconférences jusqu’à 6&nbsp;personnes.\u003C/p\u003E\r\n"
+      },
+      "rules": [],
+      "price": {
+        "monthlyPrice": 15,
+        "deviceFee": 0,
+        "activationFee": 0,
+        "installationFee": 0
+      },
+      "productIDs": [],
+      "optionIDs": [],
+      "_footprints": []
+    },
+    {
+      "_id": "54831",
+      "_name": "Mobile Medium",
+      "_weight": 10,
+      "name": "Mobile Medium",
+      "epcID": "CO003075",
+      "slug": "mob-m",
+      "groupID": "54781",
+      "label": [],
+      "specs": {
+        "description": "Appels et SMS illimités\u003Cbr/\u003E\r\nOrange Mobile Serenity Plus\u003Cbr/\u003E\r\n&nbsp;",
+        "cardtitle": "60 GB",
+        "modal": "\u003Cp class=\"coh-style-paragraph-intro\"\u003E\u003Cstrong\u003EInclus dans votre abonnement Orange Mobile Medium\u003C/strong\u003E\u003C/p\u003E\r\n\u003Cul class=\"coh-style-tick-list\"\u003E\r\n    \u003Cli\u003E\r\n        \u003Cstrong\u003E60 GB\u003C/strong\u003E de data par mois\r\n        \u003Cbr\u003E\r\n        \u003Csmall\u003EData garantie en continu : En Belgique et en EU, à partir de 60 GB, vous pourrez continuer à surfer à une vitesse de 512 kbps\u003C/small\u003E\r\n    \u003C/li\u003E\r\n    \u003Cli\u003EAppels & SMS \u003Cstrong\u003Eillimités\u003C/strong\u003E\u003C/li\u003E\r\n    \u003Cli\u003E\r\n        \u003Cstrong\u003EOrange Mobile Serenity Plus \u003C/strong\u003E(Valeur 3 €/mois)\u003Cbr\u003E\r\n        Pack combinant une solution de sécurité intégrée au réseau mobile Orange. Elle protège votre navigation sur le réseau 4G/5G en Belgique et à l'étranger, sur le WIFI privé ou public, alerte sur les sites malveillants, et bloque les sites indésirables. Détecte des applications ou fichiers malveillants, dispose d’un portail de gestion en ligne.\r\n    \u003C/li\u003E\r\n\u003C/ul\u003E\r\n\u003Cp\u003E&nbsp;\u003C/p\u003E\r\n\u003Cp class=\"coh-style-paragraph-intro\"\u003E\u003Cstrong\u003EÀ et vers l’étranger\u003C/strong\u003E\u003C/p\u003E\r\n\u003Cp\u003E\u003Cstrong\u003EDans l’UE :\u003C/strong\u003E vous utilisez vos volumes d'appels, de SMS et de surf inclus dans votre abonnement.\u003C/p\u003E\r\n\u003Cp\u003E\u003Cstrong\u003EEn dehors de l’UE :\u003C/strong\u003E voici \u003Ca href=\"/fr/options-et-services/international-roaming/tarifs\"\u003Eles tarifs internationaux\u003C/a\u003E qui sont d’application.\u003C/p\u003E\r\n\u003Cp\u003E\u003Cstrong\u003EPour tous les appels depuis la Belgique vers et hors UE :\u003C/strong\u003E nos \u003Ca href=\"/fr/options-et-services/international-roaming/tarifs\"\u003Etarifs internationaux\u003C/a\u003E sont d’application.\u003C/p\u003E\r\n\u003Cp\u003E&nbsp;\u003C/p\u003E\r\n\u003Cp class=\"coh-style-paragraph-intro\"\u003E\u003Cstrong\u003EOptions comprises dans vos abonnements\u003C/strong\u003E\u003C/p\u003E\r\n\u003Cp\u003E\u003Cstrong\u003ERéseau 5G Ultra Fast\u003C/strong\u003E\u003Cbr /\u003E\r\nSurfez jusqu'à 400 Mbps sur notre réseau 4G et jusqu'à 1 Gbps sur notre réseau 5G, sans frais additionnel, selon sa disponibilité. Attention, votre smartphone doit aussi être compatible.\u003C/p\u003E\r\n\u003Cp\u003E\u003Cstrong\u003EData control\u003C/strong\u003E\u003Cbr /\u003E\r\nGardez un œil sur votre consommation de data via l'app My Orange.\u003C/p\u003E\r\n\u003Cp\u003E\u003Cstrong\u003EPro inclusive\u003C/strong\u003E\u003Cbr /\u003E\r\nProfitez gratuitement d’options telles que le transfert d’appels, la possibilité d’être en ligne avec deux correspondants, ou encore les téléconférences jusqu’à 6 personnes.\u003C/p\u003E\r\n"
+      },
+      "rules": [],
+      "price": {
+        "monthlyPrice": 22,
+        "deviceFee": 0,
+        "activationFee": 0,
+        "installationFee": 0
+      },
+      "productIDs": [],
+      "optionIDs": [],
+      "_footprints": []
+    },
+    {
+      "_id": "54836",
+      "_name": "Mobile Large",
+      "_weight": 11,
+      "name": "Mobile Large",
+      "epcID": "CO003076",
+      "slug": "mob-l",
+      "groupID": "54781",
+      "label": [],
+      "specs": {
+        "description": "Appels et SMS illimités\u003Cbr/\u003E\r\nOrange Mobile Serenity Plus\u003Cbr/\u003E\r\nBest Destinations Data",
+        "cardtitle": "300 GB",
+        "modal": "\u003Cp class=\"coh-style-paragraph-intro\"\u003E\u003Cstrong\u003EInclus dans votre abonnement Orange Mobile Large\u003C/strong\u003E\u003C/p\u003E\r\n\u003Cul class=\"coh-style-tick-list\"\u003E\r\n    \u003Cli\u003E\r\n\t\t\u003Cstrong\u003E300 GB\u003C/strong\u003E de data par mois\r\n\t\t\u003Cbr\u003E\r\n\t\t\u003Csmall\u003EData garantie en continu : En Belgique et en EU, à partir de 300 GB, vous pourrez continuer à surfer à une vitesse de 512 kbps\u003Csmall\u003E\r\n\t\u003C/li\u003E\r\n\t\u003Cli\u003EAppels & SMS\u003Cstrong\u003E illimités\u003C/strong\u003E\u003C/li\u003E\r\n\t\u003Cli\u003E\u003Cstrong\u003EOrange Mobile Serenity Plus \u003C/strong\u003E(Valeur 3 €/mois)\u003Cbr\u003EPack combinant une solution de sécurité intégrée au réseau mobile Orange. Elle protège votre navigation sur le réseau 4G/5G en Belgique et à l'étranger, sur le WIFI privé ou public, alerte sur les sites malveillants, et bloque les sites indésirables. Détecte des applications ou fichiers malveillants, dispose d’un portail de gestion en ligne.\u003C/li\u003E\r\n\t\u003Cli\u003E\u003Cstrong\u003EBest Destinations Data :\u003C/strong\u003E\u003Cbr\u003E500 MB de volume de surf en Best Destinations (UE, USA, Chine, Canada, Suisse etc.).\u003C/li\u003E\r\n\u003C/ul\u003E\r\n\u003Cp\u003E&nbsp;\u003C/p\u003E\r\n\u003Cp class=\"coh-style-paragraph-intro\"\u003E\u003Cstrong\u003EÀ et vers l’étranger\u003C/strong\u003E\u003C/p\u003E\r\n    \u003Cp\u003E\u003Cstrong\u003EDans l’UE :\u003C/strong\u003E vous utilisez vos volumes d'appels, de SMS et de surf inclus dans votre abonnement.\u003C/p\u003E\r\n    \u003Cp\u003E\u003Cstrong\u003EEn dehors de l’UE :\u003C/strong\u003E voici \u003Ca href=\"/fr/options-et-services/international-roaming/tarifs\"\u003Eles tarifs internationaux\u003C/a\u003E qui sont d’application.\u003C/p\u003E\r\n    \u003Cp\u003E\u003Cstrong\u003EPour tous les appels depuis la Belgique vers et hors UE :\u003C/strong\u003E nos \u003Ca href=\"/fr/options-et-services/international-roaming/tarifs\"\u003Etarifs internationaux\u003C/a\u003E sont d’application.\u003C/p\u003E\r\n\u003Cp\u003E&nbsp;\u003C/p\u003E\r\n\u003Cp class=\"coh-style-paragraph-intro\"\u003E\u003Cstrong\u003EOptions comprises dans vos abonnements\u003C/strong\u003E\u003C/p\u003E\r\n    \u003Cp\u003E\u003Cstrong\u003ERéseau 5G Ultra Fast\u003C/strong\u003E\u003Cbr /\u003E\r\n\tSurfez jusqu'à 400 Mbps sur notre réseau 4G et jusqu'à 1Gbps sur notre réseau 5G, sans frais additionnel, selon sa disponibilité. Attention, votre smartphone doit aussi être compatible.\u003C/p\u003E\r\n\t\u003Cp\u003E\u003Cstrong\u003EData control\u003C/strong\u003E\u003Cbr /\u003E\r\n\tGardez un œil sur votre consommation de data via l'app My Orange.\u003C/p\u003E\r\n\t\u003Cp\u003E\u003Cstrong\u003EBest Destinations Data\u003C/strong\u003E\u003Cbr /\u003E\r\n\tVous bénéficiez de 500 MB de volume de surf en Best Destinations.\u003C/p\u003E\r\n\t\u003Cp\u003E\u003Cstrong\u003EReturn guarantee\u003C/strong\u003E\u003Cbr /\u003E\r\n\tSi vous achetez un nouveau smartphone chez Orange, vous pouvez bénéficier de l’option Return guarantee gratuitement.\u003C/p\u003E\r\n\t\u003Cp\u003E\u003Cstrong\u003EPro inclusive\u003C/strong\u003E\u003Cbr /\u003E\r\n\tProfitez gratuitement d’options telles que le transfert d’appels, la possibilité d’être en ligne avec deux correspondants, ou encore les téléconférences jusqu’à 6&nbsp;personnes.\u003C/p\u003E"
+      },
+      "rules": [],
+      "price": {
+        "monthlyPrice": 39,
+        "deviceFee": 0,
+        "activationFee": 0,
+        "installationFee": 0
+      },
+      "productIDs": [],
+      "optionIDs": [],
+      "_footprints": []
+    },
+    {
+      "_id": "54841",
+      "_name": "Orange TV Lite",
+      "_weight": 12,
+      "name": "Orange TV Lite",
+      "epcID": "AO005025",
+      "slug": "tv-lite",
+      "groupID": "54786",
+      "label": [],
+      "specs": {
+        "description": "Jusqu’à 20 chaînes\u003Cbr\u003E\r\nsans décodeur via application",
+        "cardtitle": "Orange TV Lite",
+        "modal": "\u003Cp class=\"coh-style-paragraph-intro\"\u003E\u003Cstrong\u003EPourquoi choisir Orange TV Lite ?\u003C/strong\u003E\u003C/p\u003E\r\n\r\n\u003Cp\u003ELa solution TV essentielle pour regarder vos programmes préférés partout, à tout moment, sans décodeur.\u003C/p\u003E\r\n\u003Cp\u003E&nbsp;\u003C/p\u003E\r\n\u003Cp class=\"coh-style-paragraph-intro\"\u003E\u003Cstrong\u003EOrange TV Lite, c'est :\u003C/strong\u003E\u003C/p\u003E\r\n\u003Cul class=\"coh-style-tick-list\"\u003E\r\n\t\u003Cli\u003E20 chaînes essentielles via l'application Orange TV Go\u003C/li\u003E\r\n\t\u003Cli\u003ELa possibilité de regarder sur 5 appareils simultanément\u003C/li\u003E\r\n\t\u003Cli\u003EL'accès à vos programmes sur smartphone, tablette ou PC\u003C/li\u003E\r\n\t\u003Cli\u003ELa compatibilité avec Chromecast pour diffuser sur votre TV\u003C/li\u003E\r\n\t\u003Cli\u003ELa possibilité d'enregistrer vos programmes sur le Cloud\u003C/li\u003E\r\n\u003C/ul\u003E"
+      },
+      "rules": [
+        {
+          "type": "hasProductInGroup",
+          "parameters": [
+            "54776"
+          ]
+        }
+      ],
+      "price": {
+        "monthlyPrice": 10,
+        "deviceFee": 0,
+        "activationFee": 0,
+        "installationFee": 0
+      },
+      "productIDs": [],
+      "optionIDs": [],
+      "_footprints": []
+    },
+    {
+      "_id": "54846",
+      "_name": "Orange TV",
+      "_weight": 13,
+      "name": "Orange TV",
+      "epcID": "AO005009",
+      "slug": "tv",
+      "groupID": "54786",
+      "label": [],
+      "specs": {
+        "description": "Jusqu’à 70 chaînes\u003Cbr\u003E\r\navec décodeur",
+        "cardtitle": "Orange TV",
+        "modal": "\u003Cp class=\"coh-style-paragraph-intro\"\u003E\u003Cstrong\u003EPourquoi choisir Orange TV ?\u003C/strong\u003E\u003C/p\u003E\r\n\r\n\u003Cp\u003ELa solution TV complète sur décodeur nouvelle génération pour profiter de tous vos programmes favoris à la maison.\u003C/p\u003E\r\n\u003Cp\u003E&nbsp;\u003C/p\u003E\r\n\u003Cp class=\"coh-style-paragraph-intro\"\u003E\u003Cstrong\u003EOrange TV, c'est :\u003C/strong\u003E\u003C/p\u003E\r\n\u003Cul class=\"coh-style-tick-list\"\u003E\r\n\t\u003Cli\u003EJusqu'à 80 chaînes sur votre décodeur dernière génération\u003C/li\u003E\r\n\t\u003Cli\u003EL'accès à toutes vos chaînes via l'application mobile Orange TV Go, où et quand vous le voulez\u003C/li\u003E\r\n\t\u003Cli\u003EUne Chromecast intégrée pour diffuser vos contenus depuis vos appareils mobiles en qualité 4K\u003C/li\u003E\r\n\t\u003Cli\u003EDes fonctionnalités avancées (option pause en direct, replay, enregistrement...)\u003C/li\u003E\r\n\t\u003Cli\u003ELa possibilité d'enregistrer 2 programmes en même temps\u003C/li\u003E\r\n\u003C/ul\u003E"
+      },
+      "rules": [
+        {
+          "type": "hasProductInGroup",
+          "parameters": [
+            "54776"
+          ]
+        }
+      ],
+      "price": {
+        "monthlyPrice": 20,
+        "deviceFee": 0,
+        "activationFee": 0,
+        "installationFee": 0
+      },
+      "productIDs": [],
+      "optionIDs": [],
+      "_footprints": []
+    },
+    {
+      "_id": "55436",
+      "_name": "Orange TV Plus",
+      "_weight": 14,
+      "name": "Orange TV Plus",
+      "epcID": "AO006313",
+      "slug": "tv-plus",
+      "groupID": "54786",
+      "label": [],
+      "specs": {
+        "description": "Jusqu’à 70 chaînes\u003Cbr/\u003E\r\navec décodeur\u003Cbr/\u003E\r\nNetflix standard inclus",
+        "extrainfo": "\u003Cimg class=\"netflix\" src=\"data:image/png;base64,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\" alt=\"Netflix logo\"\u003E\u003Cbr\u003E\r\n\u003Cspan\u003E2 écrans en simultané\u003C/span\u003E\u003Cbr\u003E\r\n\u003Cspan\u003EQualité Full HD\u003C/span\u003E",
+        "cardtitle": "Orange TV Plus",
+        "modal": "\u003Cp class=\"coh-style-paragraph-intro\"\u003E\u003Cstrong\u003EPourquoi choisir Orange TV Plus&nbsp;?\u003C/strong\u003E\u003C/p\u003E\r\n\r\n\u003Cp\u003E\u003Cstrong\u003EL'expérience TV sans compromis\u003C/strong\u003E, qui combine le meilleur de la télévision et du streaming, avec \u003Cstrong\u003ENetflix intégré\u003C/strong\u003E.\u003C/p\u003E\r\n\u003Cp\u003E&nbsp;\u003C/p\u003E\r\n\u003Cp class=\"coh-style-paragraph-intro\"\u003E\u003Cstrong\u003EOrange TV Plus, c'est&nbsp;:\u003C/strong\u003E\u003C/p\u003E\r\n\u003Cul class=\"coh-style-tick-list\"\u003E\r\n\t\u003Cli\u003EJusqu'à 80 chaînes sur votre décodeur dernière génération\u003C/li\u003E\r\n\t\u003Cli\u003EUn abonnement Netflix Standard inclus (Netflix Premium aussi disponible)\u003C/li\u003E\r\n\t\u003Cli\u003EL'accès à toutes vos chaînes via l'application mobile Orange TV Go, où et quand vous le voulez\u003C/li\u003E\r\n\t\u003Cli\u003EUne Chromecast intégrée pour diffuser vos contenus depuis vos appareils mobiles en qualité 4K\u003C/li\u003E\r\n\t\u003Cli\u003EDes fonctionnalités avancées (option pause en direct, replay, enregistrement...)\u003C/li\u003E\r\n\t\u003Cli\u003EUne large sélection de chaînes francophones et internationales pour petits et grands (sport, divertissement, découverte...)\u003C/li\u003E\r\n\u003C/ul\u003E\r\n"
+      },
+      "rules": [
+        {
+          "type": "hasProductInGroup",
+          "parameters": [
+            "54776"
+          ]
+        }
+      ],
+      "price": {
+        "monthlyPrice": 30,
+        "deviceFee": 0,
+        "activationFee": 0,
+        "installationFee": 0
+      },
+      "productIDs": [],
+      "optionIDs": [],
+      "_footprints": []
+    }
+  ],
+  "groups": [
+    {
+      "_id": "54776",
+      "name": "Internet",
+      "maxProducts": 1,
+      "order": 0,
+      "slug": "internet"
+    },
+    {
+      "_id": "54781",
+      "name": "Mobile",
+      "maxProducts": 5,
+      "order": 1,
+      "slug": "mobile"
+    },
+    {
+      "_id": "54786",
+      "name": "Télévision",
+      "maxProducts": 1,
+      "order": 2,
+      "slug": "tv"
+    },
+    {
+      "_id": "54791",
+      "name": "Extra",
+      "maxProducts": 999,
+      "order": 3,
+      "slug": "extra"
+    }
+  ],
+  "options": [
+    {
+      "_id": "54891",
+      "name": "Netflix",
+      "epcID": "NO_FUNNEL",
+      "slug": "nfx",
+      "groupID": "54776",
+      "label": [],
+      "specs": {
+        "description": "Streamez toutes les séries et films Netflix sur 2 écrans simultanément en qualité Full HD.",
+        "cardtitle": "Netflix",
+        "modal": "\u003Cp\u003EProfitez du service de streaming Netflix dans votre pack :\u003C/p\u003E\r\n\r\n\u003Cul class=\"coh-style-tick-list\"\u003E\r\n    \u003Cli\u003EAbonnement \u003Cstrong\u003ENetflix Standard\u003C/strong\u003E\u003C/li\u003E\r\n    \u003Cli\u003E2 écrans en simultané\u003C/li\u003E\r\n    \u003Cli\u003EQualité Full HD\u003C/li\u003E\r\n    \u003Cli\u003EDirectement intégré à votre facture Orange\u003C/li\u003E\r\n    \u003Cli\u003ESans engagement\u003C/li\u003E\r\n\u003C/ul\u003E\r\n\u003Cp\u003E\u003Cstrong\u003EBon à savoir :\u003C/strong\u003E Modifiez facilement votre offre Netflix (pour Netflix Essentiel ou Netflix Premium) depuis votre Espace Client\u003C/p\u003E"
+      },
+      "rules": [],
+      "price": {
+        "monthlyPrice": 14.99,
+        "deviceFee": 0,
+        "activationFee": 0,
+        "installationFee": 0
+      },
+      "productRelated": [
+        "54796",
+        "54801",
+        "54806"
+      ],
+      "excludedOptions": [],
+      "_footprints": []
+    },
+    {
+      "_id": "54856",
+      "name": "My Comfort Service",
+      "epcID": "AO006124",
+      "slug": "mcs",
+      "groupID": "54776",
+      "label": [],
+      "specs": {
+        "description": "Profitez d'un éventail de services pour une connectivité premium à la maison. Un WiFi de qualité partout où vous en avez besoin, un service internet invincible grâce à un relais 4G et plus encore !",
+        "cardtitle": "My Comfort Service",
+        "modal": "\u003Ch5\u003EMy Comfort Service, c’est quoi ?\u003C/h5\u003E\r\n\u003Cp\u003EIl s’agit d’une option que vous pouvez ajouter à votre internet qui vous permet de profiter de services supplémentaires sur mesure afin d’optimiser votre connexion à la maison.\u003C/p\u003E\r\n\u003Ch5\u003EQue comprend l’option&nbsp;?\u003C/h5\u003E\r\n\u003Cul class=\"coh-style-tick-list\"\u003E\r\n    \u003Cli\u003E\u003Cstrong\u003EVisite d’un expert Orange\u003C/strong\u003E \u003Cbr\u003E\r\n\t\t\t\tNotre expert installe gratuitement les équipements nécessaires pour optimiser votre connexion wifi.\r\n\t\u003C/li\u003E\r\n\t\u003Cli\u003E\u003Cstrong\u003E4G back-up\u003C/strong\u003E \u003Cbr\u003E\r\n\t\t\t\tL’installation d’une \u003Cstrong\u003Esolution 4G\u003C/strong\u003E qui prend le relais lors d’interruptions éventuelles du service Internet via le câble.\r\n    \u003C/li\u003E\r\n    \u003Cli\u003E\u003Cstrong\u003EExpérience VIP et personnalisée\u003C/strong\u003E \u003Cbr\u003E\r\n\t\t\t\t- Garantie d’une nouvelle installation ou un déménagement dans les 3 jours ouvrables \u003Cbr\u003E\r\n\t\t\t\t- Réparation dans les 24h et traitement prioritaire lors d’un appel au service client\r\n\t\u003C/li\u003E\r\n\t\u003Cli\u003E\u003Cstrong\u003EÉquipements dernière génération\u003C/strong\u003E \u003Cbr\u003E\r\n\t\t\t\tpour vos services Internet et TV (Modem, Orange TV box, WiFi boosters)\r\n    \u003C/li\u003E\r\n    \u003Cli\u003E\u003Cstrong\u003EVisite annuelle de l’expert\u003C/strong\u003E \u003Cbr\u003E\r\n\t\t\t\tUne visite gratuite par an, sur rendez-vous, afin de vérifier tous les paramètres et équipements.\r\n\t\u003C/li\u003E\r\n\u003C/ul\u003E\r\n\u003Cp\u003E\u003Cstrong\u003EBon à savoir :\u003C/strong\u003E L’option Wifi Comfort (Wifi boosters) est incluse dans My Comfort Service.\u003C/p\u003E"
+      },
+      "rules": [],
+      "price": {
+        "monthlyPrice": 10,
+        "deviceFee": 0,
+        "activationFee": 0,
+        "installationFee": 0,
+        "zeroValue": "Free"
+      },
+      "productRelated": [
+        "54796",
+        "54801",
+        "54806",
+        "54816",
+        "54811",
+        "55406"
+      ],
+      "excludedOptions": [
+        "54851"
+      ],
+      "excludedMessage": "\u003Cp\u003EVous ne pouvez pas avoir à la fois Wifi Comfort et My Comfort Service\u003C/p\u003E",
+      "_footprints": []
+    },
+    {
+      "_id": "54851",
+      "name": "WiFi Comfort",
+      "epcID": "NO_FUNNEL",
+      "slug": "wc",
+      "groupID": "54776",
+      "label": [],
+      "specs": {
+        "description": "Besoin d'améliorer la performance de votre connexion pour atteindre toutes les pièces de votre maison ? Boostez votre WiFi avec WiFi Comfort.",
+        "cardtitle": "WiFi Comfort",
+        "modal": "\u003Ch5\u003EQu’est-ce que le WiFi Comfort ?\u003C/h5\u003E\r\n\u003Cp\u003EIl s'agit de plusieurs appareils placés à différents endroits de votre habitation pour vous garantir une connexion WiFi rapide et fluide dans toutes les pièces.\u003C/p\u003E\r\n\u003Ch5\u003EComment ça fonctionne ?\u003C/h5\u003E\r\n\u003Cp\u003ESupposons que votre modem WiFi se trouve au rez-de-chaussée de votre habitation et que votre bureau se trouve au grenier. Plus vous vous éloignez du modem, plus le signal WiFi est faible et donc votre connexion internet plus lente. En plaçant un ou plusieurs modules WiFi Comfort au centre de votre habitation, vous renforcez le signal et profitez d’un internet optimal partout chez vous.\u003C/p\u003E\r\n\u003Cp\u003E\u003Cstrong\u003EBon à savoir :\u003C/strong\u003E vous avez une grande maison ? Vous pouvez ajouter jusqu'à 3&nbsp;WiFi&nbsp;boosters supplémentaires pour 3 €/mois par appareil (soit 9 €/mois pour 3&nbsp;WiFi&nbsp;boosters et 12 €/mois pour 4).\u003C/p\u003E"
+      },
+      "rules": [],
+      "price": {
+        "monthlyPrice": 3,
+        "deviceFee": 0,
+        "activationFee": 0,
+        "installationFee": 0
+      },
+      "productRelated": [
+        "54796",
+        "54801",
+        "54806",
+        "54816",
+        "54811",
+        "55406"
+      ],
+      "excludedOptions": [
+        "54856"
+      ],
+      "excludedMessage": "\u003Cp\u003EVous ne pouvez pas avoir à la fois Wifi Comfort et My Comfort Service\u003C/p\u003E",
+      "_footprints": []
+    },
+    {
+      "_id": "54866",
+      "name": "Be tv",
+      "epcID": "AO006214",
+      "slug": "betv",
+      "groupID": "54786",
+      "label": [],
+      "specs": {
+        "description": "Le meilleur du cinéma et du divertissement avec 7 chaînes à découvrir (dont les séries HBO en exclusivité).",
+        "cardtitle": "Be tv",
+        "modal": "\u003Cul class=\"coh-style-tick-list\"\u003E\r\n    \u003Cli\u003E7 Chaînes à découvrir : Be1, Be1 +1h, Be Ciné, Be Series, Ciné+ Premier, Ciné+ Frisson, Ciné+ Classic\u003C/li\u003E\r\n    \u003Cli\u003EPremières cinéma\u003C/li\u003E\r\n    \u003Cli\u003EUn large catalogue de films\u003C/li\u003E\r\n    \u003Cli\u003E2 catalogues à la demande\u003C/li\u003E\r\n    \u003Cli\u003EDocumentaires\u003C/li\u003E\r\n    \u003Cli\u003EÉmissions CANAL+\u003C/li\u003E\r\n    \u003Cli\u003ESéries originales HBO\u003C/li\u003E\r\n    \u003Cli\u003EBe tv GO&nbsp;: accédez à tous les contenus depuis vos appareils lors de vos déplacements\u003C/li\u003E\r\n    \u003Cli\u003EChoix des programmes en VO/VF\u003C/li\u003E\r\n    \u003Cli\u003ESans coupures publicitaires\u003C/li\u003E\r\n\u003C/ul\u003E"
+      },
+      "rules": [],
+      "price": {
+        "monthlyPrice": 15,
+        "deviceFee": 0,
+        "activationFee": 0,
+        "installationFee": 0
+      },
+      "productRelated": [
+        "54846",
+        "54841",
+        "55436"
+      ],
+      "excludedOptions": [],
+      "_footprints": []
+    },
+    {
+      "_id": "55441",
+      "name": "Orange TV Family",
+      "epcID": "AO006314",
+      "slug": "orangetv-family",
+      "groupID": "54786",
+      "label": [],
+      "specs": {
+        "description": "Des chaînes couvrant films, séries, dessins animés, documentaires et musique pour répondre à tous les goûts.",
+        "modal": "\u003Cp\u003E\u003Cstrong\u003EDes chaînes pour tous les goûts&nbsp;:\u003C/strong\u003E\u003C/p\u003E\r\n\u003Cul class=\"coh-style-tick-list\"\u003E\r\n    \u003Cli\u003E\u003Cstrong\u003EContenu pour enfants\u003C/strong\u003E\u003Cbr/\u003E\r\n        Boomerang, Catoonito, PIWI+ et Mangas (la chaîne 100% japanime)\r\n    \u003C/li\u003E\r\n    \u003Cli\u003E\r\n        \u003Cstrong\u003ECinéma et séries\u003C/strong\u003E\r\n        \u003Cbr/\u003EParamount Channel, Action HD, TMC Cinéma, Comedy Central et Comedy+\r\n    \u003C/li\u003E\r\n    \u003Cli\u003E\r\n        \u003Cstrong\u003EDocumentaires et découverte\u003C/strong\u003E\r\n        \u003Cbr/\u003EPlanète+, Planète+ Aventure, Planète+ Crime, Toute l'Histoire et Investigation Discovery\r\n    \u003C/li\u003E\r\n    \u003Cli\u003E\r\n        \u003Cstrong\u003EMusique et arts\u003C/strong\u003E\r\n        \u003Cbr/\u003EMezzo, MCM et Trace Urban\r\n    \u003C/li\u003E\r\n\u003C/ul\u003E"
+      },
+      "rules": [
+        {
+          "type": "hasProductInGroup",
+          "parameters": [
+            "54786"
+          ]
+        }
+      ],
+      "price": {
+        "monthlyPrice": 15,
+        "deviceFee": 0,
+        "activationFee": 0,
+        "installationFee": 0
+      },
+      "productRelated": [
+        "54846",
+        "54841",
+        "55436"
+      ],
+      "excludedOptions": [],
+      "_footprints": []
+    },
+    {
+      "_id": "54871",
+      "name": "Orange Sport",
+      "epcID": "AO006220",
+      "slug": "vsw",
+      "groupID": "54786",
+      "label": [],
+      "specs": {
+        "description": "Fan de foot ? Profitez du meilleur de la Premier League, à la maison et en déplacement.",
+        "cardtitle": "VOOsport World",
+        "modal": "\u003Ch5\u003EFootball\u003C/h5\u003E\r\n\u003Cp\u003EVivez l'excitation du football avec la Premier League et l'Europa League, en exclusivité sur nos chaînes !\u003C/p\u003E\r\n\u003Ch5\u003E3 chaînes 100% dédiées au sport international\u003C/h5\u003E\r\n\u003Cp\u003EFootball mais aussi tennis, golf, basket, hockey, boxe : suivez toutes les compétitions sportives depuis le confort de votre salon avec Orange TV ou lors de vos déplacements via l’app avec Orange TV Lite.\u003C/p\u003E"
+      },
+      "rules": [],
+      "price": {
+        "monthlyPrice": 15,
+        "deviceFee": 0,
+        "activationFee": 0,
+        "installationFee": 0,
+        "zeroValue": "Free"
+      },
+      "productRelated": [
+        "54846",
+        "54841",
+        "55436"
+      ],
+      "excludedOptions": [],
+      "_footprints": []
+    },
+    {
+      "_id": "54876",
+      "name": "Fixed Phone",
+      "epcID": "AO000139",
+      "slug": "fp",
+      "groupID": "54791",
+      "label": [],
+      "specs": {
+        "description": "Demandez l’installation d’une ligne fixe chez vous et appelez sans limite en Belgique et vers 40 pays étrangers.",
+        "cardtitle": "Fixed Phone",
+        "modal": "\u003Ch5\u003EL’option Fixed Phone c’est :\u003C/h5\u003E\r\n\u003Cul class=\"coh-style-tick-list\"\u003E\r\n    \u003Cli\u003EAppels illimités vers tous les numéros fixes et mobiles en Belgique\u003C/li\u003E\r\n    \u003Cli\u003EAppels illimités vers les numéros fixes dans 40 destinations internationales\u003C/li\u003E\r\n    \u003Cli\u003EOffre sans engagement : vous pouvez résilier votre option à tout moment\u003C/li\u003E\r\n\u003C/ul\u003E"
+      },
+      "rules": [],
+      "price": {
+        "monthlyPrice": 12,
+        "deviceFee": 0,
+        "activationFee": 0,
+        "installationFee": 0
+      },
+      "productRelated": [
+        "54796",
+        "54801",
+        "54806",
+        "54816",
+        "54811",
+        "55406"
+      ],
+      "excludedOptions": [],
+      "_footprints": []
+    },
+    {
+      "_id": "54881",
+      "name": "Google Chromecast",
+      "epcID": "AO005007",
+      "slug": "gc",
+      "groupID": "54791",
+      "label": [],
+      "specs": {
+        "description": "Pas de Smart TV chez vous ? Regardez vos séries et films sur votre TV depuis votre smartphone avec Chromecast.",
+        "cardtitle": "Google Chromecast",
+        "modal": "\u003Ch5\u003EQu’est-ce que Google Chromecast ?\u003C/h5\u003E\r\n\u003Cp\u003EC’est un appareil multimédia très compact que vous branchez sur votre TV et qui vous permet de diffuser le contenu que vous souhaitez depuis votre smartphone/tablette/ordinateur via le WiFi.\u003C/p\u003E\r\n\u003Cp\u003EC’est très pratique par exemple, si vous n’avez pas de Smart TV et que souhaitez regarder Netflix sur votre télévision ou bien si vous optez pour l’option Orange TV lite sans décodeur pour regarder vos chaînes préférées.\u003C/p\u003E   \r\n\u003C/div\u003E\r\n\u003Cp\u003E\u003Cstrong\u003EBon à savoir :\u003C/strong\u003E une fois le Google Chromecast acheté, il vous appartient. Vous pouvez même l’embarquer en vacances, son installation ne prend que quelques minutes.\u003C/p\u003E\r\n\u003Cp\u003E\u003Cstrong\u003ECerise sur le gâteau :\u003C/strong\u003E avec votre pack Love, le Chromecast est à \u003Cstrong\u003E20€ au lieu de 39€\u003C/strong\u003E.\u003C/p\u003E",
+        "extrasuffix": "Paiement unique"
+      },
+      "rules": [],
+      "price": {
+        "monthlyPrice": 0,
+        "deviceFee": 20,
+        "activationFee": 0,
+        "installationFee": 0
+      },
+      "productRelated": [],
+      "excludedOptions": [],
+      "_footprints": []
+    },
+    {
+      "_id": "54886",
+      "name": "Extra décodeur",
+      "epcID": "AO005014",
+      "slug": "ed",
+      "groupID": "54791",
+      "label": [],
+      "specs": {
+        "description": "Louez un décodeur TV supplémentaire pour une autre pièce.",
+        "cardtitle": "Extra décodeur",
+        "modal": "\u003Ch5\u003EÀ quoi sert l’option Extra décodeur TV ?\u003C/h5\u003E\r\n\u003Cp\u003EC’est l’option qu’il vous faut si vous avez plusieurs téléviseurs chez vous dans des pièces différentes et que vous souhaitez regarder la TV sur chacun d’entre eux.\u003C/p\u003E   \r\n\u003Cp\u003E\u003Cstrong\u003EBon à savoir :\u003C/strong\u003E\u003C/p\u003E \r\n\u003Cul class=\"coh-style-tick-list\"\u003E\r\n    \u003Cli\u003EL’option Extra Décodeur est une location ; c’est-à-dire que pour chaque décodeur supplémentaire vous payez un montant fixe par mois.\u003C/li\u003E\r\n    \u003Cli\u003EVous pouvez commander jusqu’à 3 décodeurs supplémentaires (en plus de celui déjà inclus dans l’offre Orange TV).\u003C/li\u003E\r\n    \u003Cli\u003EOption sans engagement : vous pouvez la résilier à tout moment si vous n’avez plus besoin du décodeur supplémentaire.\u003C/li\u003E\r\n    \u003Cli\u003EVous aurez besoin d’une prise coaxiale pour pouvoir installer votre extra décodeur.\u003C/li\u003E\r\n\u003C/ul\u003E"
+      },
+      "rules": [],
+      "price": {
+        "monthlyPrice": 9,
+        "deviceFee": 0,
+        "activationFee": 0,
+        "installationFee": 0
+      },
+      "productRelated": [
+        "54846",
+        "55436"
+      ],
+      "excludedOptions": [],
+      "_footprints": []
+    }
+  ],
+  "priceRules": [
+    {
+      "_id": "55016",
+      "name": "All-in promo:",
+      "productIDs": [],
+      "optionIDs": [
+        "54856"
+      ],
+      "rules": [
+        {
+          "type": "hasProduct",
+          "parameters": [
+            "54806",
+            "54811"
+          ]
+        }
+      ],
+      "calculation": {
+        "method": "amount",
+        "value": 5,
+        "duration": -1
+      },
+      "calculationOrder": 0,
+      "legalSummary": "\u003Cp\u003E\u003Cstrong\u003EAll-in promo: -5 € sur l'option My Comfort Service\u003C/strong\u003E\u003C/p\u003E",
+      "legalInfo": "\u003Cp\u003EPromotion valable pour toute nouvelle subscription à l'offre All-in Fiber* (Giga Fiber* + My Comfort Service).\u003Cbr\u003E* Réseau hybride fibre et coaxial, ne contenant pas que de la fibre.​\u003C/p\u003E",
+      "specs": {
+        "description": "avec Giga Fiber*, l’option My Comfort Service pour 5 € au lieu de 10 € "
+      }
+    },
+    {
+      "_id": "54941",
+      "name": "Internet illimité 1 Gbps + Netflix :",
+      "productIDs": [
+        "54811"
+      ],
+      "optionIDs": [],
+      "rules": [],
+      "calculation": {
+        "method": "amount",
+        "value": 5.99,
+        "duration": -1
+      },
+      "calculationOrder": 1,
+      "legalSummary": "\u003Cp\u003E\u003Cstrong\u003ERéduction sur Internet illimité 1 Gbps + Netflix\u003C/strong\u003E\u003C/p\u003E",
+      "legalInfo": "\u003Cp\u003ERéduction sur les frais mensuels de 5,99€ sur le pack Internet illimité 1 Gbps + Netflix à vie. Si vous résiliez votre option Netflix ou changez de plan tarifaire internet, la promotion sera automatiquement désactivée.\u003C/p\u003E",
+      "specs": {
+        "description": "5,99€ de réduction inclus"
+      }
+    },
+    {
+      "_id": "54936",
+      "name": "Avantage multi-produits :",
+      "productIDs": [
+        "54796",
+        "54801",
+        "54806",
+        "54816",
+        "54811",
+        "55406"
+      ],
+      "optionIDs": [],
+      "rules": [
+        {
+          "type": "hasProductInGroup",
+          "parameters": [
+            "54776"
+          ]
+        },
+        {
+          "type": "hasProductInGroup",
+          "parameters": [
+            "54781"
+          ]
+        }
+      ],
+      "calculation": {
+        "method": "amount",
+        "value": 4,
+        "duration": -1
+      },
+      "calculationOrder": 2,
+      "legalSummary": "\u003Cp\u003E\u003Cstrong\u003EMulti-produits internet\u003C/strong\u003E\u003C/p\u003E\r\n",
+      "legalInfo": "\u003Cp\u003E4 € de réduction par mois sur votre abonnement Internet grâce à votre sélection d'une offre mobile Orange Mobile. Non cumulable avec d’autres promotions ou la promo web.\u003C/p\u003E\r\n",
+      "specs": {
+        "description": "4€ de réduction inclus\r\n"
+      }
+    },
+    {
+      "_id": "55411",
+      "name": "Internet illimité 1 Gbps + Netflix :",
+      "productIDs": [
+        "54806"
+      ],
+      "optionIDs": [],
+      "rules": [
+        {
+          "type": "hasOption",
+          "parameters": [
+            "54891"
+          ]
+        }
+      ],
+      "calculation": {
+        "method": "amount",
+        "value": 5.99,
+        "duration": -1
+      },
+      "calculationOrder": 3,
+      "legalSummary": "\u003Cp\u003E\u003Cstrong\u003ERéduction sur Internet illimité 1 Gbps + Netflix\u003C/strong\u003E\u003C/p\u003E",
+      "legalInfo": "\u003Cp\u003ERéduction sur les frais mensuels de 5,99€ sur le pack Internet illimité 1 Gbps + Netflix à vie. Si vous résiliez votre option Netflix ou changez de plan tarifaire internet, la promotion sera automatiquement désactivée.\u003C/p\u003E",
+      "specs": {
+        "description": "\u003Cp\u003E5,99€ de réduction inclus\u003C/p\u003E"
+      }
+    },
+    {
+      "_id": "54911",
+      "name": "Avantage multi-produits :",
+      "productIDs": [
+        "54826"
+      ],
+      "optionIDs": [],
+      "rules": [
+        {
+          "type": "hasOnlyProductInGroup",
+          "parameters": [
+            "54781"
+          ]
+        },
+        {
+          "type": "itemMin",
+          "parameters": [
+            "2",
+            [
+              "54826",
+              "54831",
+              "54836"
+            ]
+          ]
+        }
+      ],
+      "calculation": {
+        "method": "amount",
+        "value": 1,
+        "duration": -1
+      },
+      "calculationOrder": 4,
+      "legalSummary": "\u003Cp\u003E\u003Cstrong\u003EMulti-produits Orange Mobile Small\u003C/strong\u003E\u003C/p\u003E\r\n",
+      "legalInfo": "\u003Cp\u003E1 € de réduction par mois sur votre abonnement Orange Mobile Small, à partir de deux abonnements Orange mobile. Non cumulable avec d’autres promotions ou la promo web.\u003C/p\u003E\r\n",
+      "specs": {
+        "description": "1€ de réduction inclus"
+      }
+    },
+    {
+      "_id": "54916",
+      "name": "Avantage multi-produits :",
+      "productIDs": [
+        "54831"
+      ],
+      "optionIDs": [],
+      "rules": [
+        {
+          "type": "hasOnlyProductInGroup",
+          "parameters": [
+            "54781"
+          ]
+        },
+        {
+          "type": "itemMin",
+          "parameters": [
+            "2",
+            [
+              "54826",
+              "54831",
+              "54836"
+            ]
+          ]
+        }
+      ],
+      "calculation": {
+        "method": "amount",
+        "value": 2,
+        "duration": -1
+      },
+      "calculationOrder": 5,
+      "legalSummary": "\u003Cp\u003E\u003Cstrong\u003EMulti-produits Orange Mobile Medium\u003C/strong\u003E\u003C/p\u003E\r\n",
+      "legalInfo": "\u003Cp\u003E2 € de réduction par mois sur votre abonnement Orange Mobile Medium, à partir de deux abonnements Orange mobile. Non cumulable avec d’autres promotions ou la promo web.\u003C/p\u003E\r\n",
+      "specs": {
+        "description": "2€ de réduction inclus"
+      }
+    },
+    {
+      "_id": "54906",
+      "name": "Avantage multi-produits :",
+      "productIDs": [
+        "54836"
+      ],
+      "optionIDs": [],
+      "rules": [
+        {
+          "type": "hasOnlyProductInGroup",
+          "parameters": [
+            "54781"
+          ]
+        },
+        {
+          "type": "itemMin",
+          "parameters": [
+            "2",
+            [
+              "54826",
+              "54831",
+              "54836"
+            ]
+          ]
+        }
+      ],
+      "calculation": {
+        "method": "amount",
+        "value": 3,
+        "duration": -1
+      },
+      "calculationOrder": 6,
+      "legalSummary": "\u003Cp\u003E\u003Cstrong\u003EMulti-produits Orange Mobile Large\u003C/strong\u003E\u003C/p\u003E",
+      "legalInfo": "\u003Cp\u003E3 € de réduction par mois sur votre abonnement Orange Mobile Large, à partir de deux abonnements Orange mobile. Non cumulable avec d’autres promotions ou la promo web.\u003C/p\u003E",
+      "specs": {
+        "description": "3€ de réduction inclus"
+      }
+    },
+    {
+      "_id": "54931",
+      "name": "Avantage multi-produits :",
+      "productIDs": [
+        "54826"
+      ],
+      "optionIDs": [],
+      "rules": [
+        {
+          "type": "hasProductInGroup",
+          "parameters": [
+            "54776"
+          ]
+        },
+        {
+          "type": "itemMin",
+          "parameters": [
+            "1",
+            [
+              "54826",
+              "54831",
+              "54836"
+            ]
+          ]
+        },
+        {
+          "type": "itemMax",
+          "parameters": [
+            "1",
+            [
+              "54826",
+              "54831",
+              "54836"
+            ]
+          ]
+        }
+      ],
+      "calculation": {
+        "method": "amount",
+        "value": 3,
+        "duration": -1
+      },
+      "calculationOrder": 7,
+      "legalSummary": "\u003Cp\u003E\u003Cstrong\u003EMulti-produits Orange Mobile Small\u003C/strong\u003E\u003C/p\u003E",
+      "legalInfo": "\u003Cp\u003E3 € de réduction par mois sur votre abonnement Orange Mobile Small grâce à votre sélection d'une offre internet illimité Orange. Non cumulable avec d’autres promotions ou la promo web.\u003C/p\u003E",
+      "specs": {
+        "description": "3€ de réduction inclus"
+      }
+    },
+    {
+      "_id": "54926",
+      "name": "Avantage multi-produits :",
+      "productIDs": [
+        "54831"
+      ],
+      "optionIDs": [],
+      "rules": [
+        {
+          "type": "hasProductInGroup",
+          "parameters": [
+            "54776"
+          ]
+        },
+        {
+          "type": "itemMin",
+          "parameters": [
+            "1",
+            [
+              "54826",
+              "54831",
+              "54836"
+            ]
+          ]
+        },
+        {
+          "type": "itemMax",
+          "parameters": [
+            "1",
+            [
+              "54826",
+              "54831",
+              "54836"
+            ]
+          ]
+        }
+      ],
+      "calculation": {
+        "method": "amount",
+        "value": 5,
+        "duration": -1
+      },
+      "calculationOrder": 8,
+      "legalSummary": "\u003Cp\u003E\u003Cstrong\u003EMulti-produits Orange Mobile Medium\u003C/strong\u003E\u003C/p\u003E",
+      "legalInfo": "\u003Cp\u003E5 € de réduction par mois sur votre abonnement Orange Mobile Medium grâce à votre sélection d'une offre internet illimité Orange. Non cumulable avec d’autres promotions ou la promo web.\u003C/p\u003E",
+      "specs": {
+        "description": "5€ de réduction inclus"
+      }
+    },
+    {
+      "_id": "54921",
+      "name": "Avantage multi-produits :",
+      "productIDs": [
+        "54836"
+      ],
+      "optionIDs": [],
+      "rules": [
+        {
+          "type": "hasProductInGroup",
+          "parameters": [
+            "54776"
+          ]
+        },
+        {
+          "type": "itemMin",
+          "parameters": [
+            "1",
+            [
+              "54826",
+              "54831",
+              "54836"
+            ]
+          ]
+        },
+        {
+          "type": "itemMax",
+          "parameters": [
+            "1",
+            [
+              "54826",
+              "54831",
+              "54836"
+            ]
+          ]
+        }
+      ],
+      "calculation": {
+        "method": "amount",
+        "value": 6,
+        "duration": -1
+      },
+      "calculationOrder": 9,
+      "legalSummary": "\u003Cp\u003E\u003Cstrong\u003EMulti-produits Orange Mobile Large\u003C/strong\u003E\u003C/p\u003E\r\n",
+      "legalInfo": "\u003Cp\u003E6 € de réduction par mois sur votre abonnement Orange Mobile Large grâce à votre sélection d'une offre internet illimité Orange. Non cumulable avec d’autres promotions ou la promo web.\u003C/p\u003E\r\n",
+      "specs": {
+        "description": "6€ de réduction inclus"
+      }
+    },
+    {
+      "_id": "54951",
+      "name": "Avantage multi-produits :",
+      "productIDs": [
+        "54826"
+      ],
+      "optionIDs": [],
+      "rules": [
+        {
+          "type": "hasProductInGroup",
+          "parameters": [
+            "54776"
+          ]
+        },
+        {
+          "type": "itemMin",
+          "parameters": [
+            "2",
+            [
+              "54826",
+              "54831",
+              "54836"
+            ]
+          ]
+        }
+      ],
+      "calculation": {
+        "method": "amount",
+        "value": 4,
+        "duration": -1
+      },
+      "calculationOrder": 10,
+      "legalSummary": "\u003Cp\u003E\u003Cstrong\u003EMulti-produits Orange Mobile Small\u003C/strong\u003E\u003C/p\u003E",
+      "legalInfo": "\u003Cp\u003E4 € de réduction par mois sur votre abonnement Orange Mobile Small, à partir de deux abonnements grâce à votre sélection d'une offre internet illimité Orange. Non cumulable avec d’autres promotions ou la promo web.\u003C/p\u003E",
+      "specs": {
+        "description": "4€ de réduction inclus"
+      }
+    },
+    {
+      "_id": "54956",
+      "name": "Avantage multi-produits :",
+      "productIDs": [
+        "54831"
+      ],
+      "optionIDs": [],
+      "rules": [
+        {
+          "type": "hasProductInGroup",
+          "parameters": [
+            "54776"
+          ]
+        },
+        {
+          "type": "itemMin",
+          "parameters": [
+            "2",
+            [
+              "54826",
+              "54831",
+              "54836"
+            ]
+          ]
+        }
+      ],
+      "calculation": {
+        "method": "amount",
+        "value": 7,
+        "duration": -1
+      },
+      "calculationOrder": 11,
+      "legalSummary": "\u003Cp\u003E\u003Cstrong\u003EMulti-produits Orange Mobile Medium\u003C/strong\u003E\u003C/p\u003E",
+      "legalInfo": "\u003Cp\u003E7 € de réduction par mois sur votre abonnement Orange Mobile Medium, à partir de deux abonnements grâce à votre sélection d'une offre internet illimité Orange. Non cumulable avec d’autres promotions ou la promo web.\u003C/p\u003E",
+      "specs": {
+        "description": "7€ de réduction inclus"
+      }
+    },
+    {
+      "_id": "54961",
+      "name": "Avantage multi-produits :",
+      "productIDs": [
+        "54836"
+      ],
+      "optionIDs": [],
+      "rules": [
+        {
+          "type": "hasProductInGroup",
+          "parameters": [
+            "54776"
+          ]
+        },
+        {
+          "type": "itemMin",
+          "parameters": [
+            "2",
+            [
+              "54826",
+              "54831",
+              "54836"
+            ]
+          ]
+        }
+      ],
+      "calculation": {
+        "method": "amount",
+        "value": 9,
+        "duration": -1
+      },
+      "calculationOrder": 12,
+      "legalSummary": "\u003Cp\u003E\u003Cstrong\u003EMulti-produits Orange Mobile Large\u003C/strong\u003E\u003C/p\u003E\r\n",
+      "legalInfo": "\u003Cp\u003E9 € de réduction par mois sur votre abonnement Orange Mobile Large, à partir de deux abonnements grâce à votre sélection d'une offre internet illimité Orange. Non cumulable avec d’autres promotions ou la promo web.\u003C/p\u003E\r\n",
+      "specs": {
+        "description": "9€ de réduction inclus"
+      }
+    },
+    {
+      "_id": "54946",
+      "name": "  Internet illimité 500 Mbps + Netflix :",
+      "productIDs": [],
+      "optionIDs": [],
+      "rules": [],
+      "calculation": {
+        "method": "amount",
+        "value": 5.99,
+        "duration": 6
+      },
+      "calculationOrder": 13,
+      "legalSummary": "\u003Cp\u003E\u003Cstrong\u003ERéduction sur Internet illimité 500 Mbps + Netflix\u003C/strong\u003E\u003C/p\u003E",
+      "legalInfo": "\u003Cp\u003EA compléter\u003C/p\u003E",
+      "specs": {
+        "description": "\u003Cp\u003EContenu du price rule\u003C/p\u003E"
+      }
+    }
+  ],
+  "promotions": [
+    {
+      "_id": "56296",
+      "epcID": "AO006215",
+      "name": "Réduction: -50%pendant 6 mois",
+      "type": "discount",
+      "calculation": {
+        "method": "percentage",
+        "value": 50,
+        "duration": 6
+      },
+      "calculationOrder": 0,
+      "excludedPromos": [],
+      "startDate": "2025-09-30T06:00:00",
+      "endDate": "2025-11-06T22:59:59",
+      "productIDs": [],
+      "optionIDs": [
+        "54866"
+      ],
+      "promoCodeIDs": [],
+      "rules": [],
+      "label": [],
+      "legalSummary": "\u003Cp\u003E\u003Cstrong\u003EBe tv - Promo : -50% pendant 6 mois\u003C/strong\u003E\u003C/p\u003E",
+      "legalInfo": "Offre valable du 30/09/2025 jusqu’au 6/11/2025 inclus. Vous bénéficiez de 50% sur l'option Be tv pendant 6 mois.",
+      "isChoice": false,
+      "price": {
+        "monthlyPrice": 0,
+        "deviceFee": 0,
+        "activationFee": 0,
+        "installationFee": 0
+      }
+    },
+    {
+      "_id": "56301",
+      "epcID": "AO006221",
+      "name": "Promo : 6 mois offerts",
+      "type": "discount",
+      "calculation": {
+        "method": "free",
+        "value": 0,
+        "duration": 6
+      },
+      "calculationOrder": 0,
+      "excludedPromos": [],
+      "startDate": "2025-09-30T06:00:00",
+      "endDate": "2025-11-06T22:59:59",
+      "productIDs": [],
+      "optionIDs": [
+        "54871"
+      ],
+      "promoCodeIDs": [],
+      "rules": [],
+      "label": [],
+      "legalSummary": "\u003Cp\u003E\u003Cstrong\u003EPromo : Orange Sport offert pendant 6 mois\u003C/strong\u003E\u003C/p\u003E",
+      "legalInfo": "Offre valable du 30/09/2025 jusqu'au 6/11/2025 inclus. Orange Sport offert pendant 6 mois.",
+      "isChoice": false,
+      "price": {
+        "monthlyPrice": 0,
+        "deviceFee": 0,
+        "activationFee": 0,
+        "installationFee": 0
+      }
+    },
+    {
+      "_id": "56286",
+      "name": "Promo web :",
+      "type": "discount",
+      "calculation": {
+        "method": "amount",
+        "value": 14,
+        "duration": 12
+      },
+      "calculationOrder": 1,
+      "excludedPromos": [],
+      "startDate": "2025-09-22T06:00:00",
+      "endDate": "2025-09-30T05:59:59",
+      "productIDs": [
+        "54836"
+      ],
+      "optionIDs": [],
+      "promoCodeIDs": [],
+      "rules": [
+        {
+          "type": "hasOnlyProductInGroup",
+          "parameters": [
+            "54781"
+          ]
+        }
+      ],
+      "label": [],
+      "legalSummary": "\u003Cp\u003E\u003Cstrong\u003EOrange Mobile Large - Promo web : -14€ pendant 12 mois\u003C/strong\u003E\u003C/p\u003E",
+      "legalInfo": "Offre valable du 22/09/2025 jusqu'au 29/09/2025, pour toute nouvelle souscription en ligne à un abonnement Orange Mobile Large. Vous bénéficiez d'une réduction de 14€ sur votre Orange Mobile Large durant 12 mois. Cette réduction reste valable tant que l'abonnement mobile reste actif. L'offre n'est pas compatible avec l'avantage multi-produits ou toute autre promotion sur votre Orange Mobile Large.",
+      "isChoice": false,
+      "specs": {
+        "description": "-14€ pendant 12 mois"
+      },
+      "price": {
+        "monthlyPrice": 0,
+        "deviceFee": 0,
+        "activationFee": 0,
+        "installationFee": 0
+      }
+    },
+    {
+      "_id": "56291",
+      "name": "Promo :",
+      "type": "discount",
+      "calculation": {
+        "method": "amount",
+        "value": 8,
+        "duration": 6
+      },
+      "calculationOrder": 2,
+      "excludedPromos": [],
+      "startDate": "2025-09-22T06:00:00",
+      "endDate": "2025-09-30T05:59:59",
+      "productIDs": [
+        "54831"
+      ],
+      "optionIDs": [],
+      "promoCodeIDs": [],
+      "rules": [],
+      "label": [],
+      "legalSummary": "\u003Cp\u003E\u003Cstrong\u003EPromo : -8€ pendant 6 mois\u003C/strong\u003E\u003C/p\u003E",
+      "legalInfo": "Offre valable du 05/09/2025 jusqu’au 29/09/2025 inclus, pour toute nouvelle souscription en ligne à un abonnement Orange Mobile Medium. Vous bénéficiez désormais d’une promotion de 8 € par mois sur vos abonnements éligibles pendant 6 mois. Cette réduction reste valable tant que l'abonnement mobile reste actif. A l’issue de la période des 6 mois, vous conserverez votre abonnement mobile et le montant de votre abonnement mensuel sera sans la promotion.",
+      "isChoice": false,
+      "specs": {
+        "description": "-8€ pendant 6 mois"
+      },
+      "price": {
+        "monthlyPrice": 0,
+        "deviceFee": 0,
+        "activationFee": 0,
+        "installationFee": 0
+      }
+    },
+    {
+      "_id": "56276",
+      "name": "Promo :",
+      "type": "discount",
+      "calculation": {
+        "method": "amount",
+        "value": 8,
+        "duration": 6
+      },
+      "calculationOrder": 3,
+      "excludedPromos": [],
+      "startDate": "2025-09-30T06:00:00",
+      "endDate": "2025-11-06T22:59:59",
+      "productIDs": [
+        "54831",
+        "54836"
+      ],
+      "optionIDs": [],
+      "promoCodeIDs": [],
+      "rules": [],
+      "label": [],
+      "legalSummary": "\u003Cp\u003E\u003Cstrong\u003EPromo : -8€ pendant 6 mois\u003C/strong\u003E\u003C/p\u003E",
+      "legalInfo": "Offre valable du 30/09/2025 jusqu’au 6/11/2025 inclus, pour toute nouvelle souscription en ligne à un abonnement Orange Mobile Medium ou Large. Vous bénéficiez désormais d’une promotion de 8 € par mois sur vos abonnements éligibles pendant 6 mois. Cette réduction reste valable tant que l'abonnement mobile reste actif. A l’issue de la période des 6 mois, vous conserverez votre abonnement mobile et le montant de votre abonnement mensuel sera sans la promotion.",
+      "isChoice": false,
+      "specs": {
+        "description": "-8€ pendant 6 mois"
+      },
+      "price": {
+        "monthlyPrice": 0,
+        "deviceFee": 0,
+        "activationFee": 0,
+        "installationFee": 0
+      }
+    },
+    {
+      "_id": "56266",
+      "epcID": "AO005004",
+      "name": "Frais d'activation offerts",
+      "type": "activationFee",
+      "calculation": {
+        "method": "free",
+        "value": 0,
+        "duration": -1
+      },
+      "calculationOrder": 7,
+      "excludedPromos": [],
+      "startDate": "2025-09-05T07:00:00",
+      "endDate": "2025-11-06T22:59:59",
+      "productIDs": [
+        "54801",
+        "54816",
+        "54806",
+        "54811",
+        "54796",
+        "55406"
+      ],
+      "optionIDs": [],
+      "promoCodeIDs": [],
+      "rules": [
+        {
+          "type": "hasProductInGroup",
+          "parameters": [
+            "54781"
+          ]
+        },
+        {
+          "type": "hasProductInGroup",
+          "parameters": [
+            "54776"
+          ]
+        }
+      ],
+      "label": [],
+      "legalSummary": "\u003Cp\u003E\u003Cstrong\u003EPromo : Frais de mise en service offerts\u003C/strong\u003E\u003C/p\u003E",
+      "legalInfo": "Offre valable du 30/09/2025 jusqu'au 6/11/2025 inclus. Vous bénéficiez gratuitement des frais de mise en service (d'une valeur de 39 €) pour votre nouvel abonnement au service internet Orange.",
+      "isChoice": false,
+      "price": {
+        "monthlyPrice": 0,
+        "deviceFee": 0,
+        "activationFee": 0,
+        "installationFee": 0
+      }
+    },
+    {
+      "_id": "56261",
+      "epcID": "AO006357",
+      "name": "Promo :",
+      "type": "discount",
+      "calculation": {
+        "method": "amount",
+        "value": 18,
+        "duration": 12
+      },
+      "calculationOrder": 8,
+      "excludedPromos": [],
+      "startDate": "2025-08-12T06:00:00",
+      "endDate": "2025-11-06T22:59:59",
+      "productIDs": [
+        "54806",
+        "54811"
+      ],
+      "optionIDs": [],
+      "promoCodeIDs": [],
+      "rules": [
+        {
+          "type": "hasProductInGroup",
+          "parameters": [
+            "54781"
+          ]
+        }
+      ],
+      "label": [],
+      "legalSummary": "\u003Cp\u003E\u003Cstrong\u003EPromo : Abonnement Internet illimité 1000 Mbps au prix d'Internet illimité 200 Mbps&nbsp;pendant 12 mois, dans votre pack Love\u003C/strong\u003E\u003C/p\u003E",
+      "legalInfo": "Offre valable du 30/09/2025 jusqu’au 6/11/2025 inclus, pour toute nouvelle souscription à un abonnement Love (Mobile + Internet avec ou sans Orange TV / Orange TV-Lite) minimum.\u003Cbr/\u003E\r\nVous bénéficiez de 18 EUR (TVA comprise) de réduction par mois sur l'offre illimité 1000 Mbps.",
+      "isChoice": false,
+      "specs": {
+        "description": "-18 € pendant 12 mois"
+      },
+      "price": {
+        "monthlyPrice": 0,
+        "deviceFee": 0,
+        "activationFee": 0,
+        "installationFee": 0
+      }
+    },
+    {
+      "_id": "56271",
+      "name": "Promo web :",
+      "type": "discount",
+      "calculation": {
+        "method": "amount",
+        "value": 5,
+        "duration": 12
+      },
+      "calculationOrder": 9,
+      "excludedPromos": [],
+      "startDate": "2025-08-12T05:50:00",
+      "endDate": "2025-09-05T06:59:59",
+      "productIDs": [
+        "54831",
+        "54836"
+      ],
+      "optionIDs": [],
+      "promoCodeIDs": [],
+      "rules": [],
+      "label": [],
+      "legalSummary": "\u003Cp\u003E\u003Cstrong\u003EPromo web : -5€ pendant 12 mois\u003C/strong\u003E\u003C/p\u003E",
+      "legalInfo": "Offre valable du 01/09/2025 jusqu’au 29/09/2025 inclus, pour toute nouvelle souscription en ligne à un abonnement Orange Mobile Medium ou Large. Vous bénéficiez désormais d’une promotion de 5 € par mois sur vos abonnements éligibles pendant 12 mois. Cette réduction reste valable tant que l'abonnement mobile reste actif. A l’issue de la période des 12 mois, vous conserverez votre abonnement mobile et le montant de votre abonnement mensuel sera sans la promotion.",
+      "isChoice": false,
+      "specs": {
+        "description": "-5€ pendant 12 mois"
+      },
+      "price": {
+        "monthlyPrice": 0,
+        "deviceFee": 0,
+        "activationFee": 0,
+        "installationFee": 0
+      }
+    },
+    {
+      "_id": "56256",
+      "epcID": "AO006338",
+      "name": "Promo :",
+      "type": "discount",
+      "calculation": {
+        "method": "amount",
+        "value": 15,
+        "duration": 6
+      },
+      "calculationOrder": 10,
+      "excludedPromos": [],
+      "startDate": "2025-08-12T06:00:00",
+      "endDate": "2025-11-06T22:59:59",
+      "productIDs": [
+        "54796",
+        "55406",
+        "54801",
+        "54816"
+      ],
+      "optionIDs": [],
+      "promoCodeIDs": [],
+      "rules": [
+        {
+          "type": "hasProductInGroup",
+          "parameters": [
+            "54781"
+          ]
+        }
+      ],
+      "label": [],
+      "legalSummary": "\u003Cp\u003E\u003Cstrong\u003EPromo : Abonnement Internet illimité 200 Mbps / 500 Mbps -15€ pendant 6 mois, dans votre pack Love\u003C/strong\u003E\u003C/p\u003E",
+      "legalInfo": "Offre valable du 30/09/2025 jusqu'au 6/11/2025 inclus, pour toute nouvelle souscription en ligne à un abonnement Love (Mobile + Internet avec ou sans Orange TV / Orange TV Lite) minimum.\u003Cbr/\u003E \r\nVous bénéficiez de 15 EUR (TVA comprise) de réduction par mois sur l'offre Internet illimité 200 Mbps / 500 Mbps durant 6 mois.",
+      "isChoice": false,
+      "specs": {
+        "description": "-15 € pendant 6 mois"
+      },
+      "price": {
+        "monthlyPrice": 0,
+        "deviceFee": 0,
+        "activationFee": 0,
+        "installationFee": 0
+      }
+    },
+    {
+      "_id": "56201",
+      "epcID": "AO005004",
+      "name": "Frais d'activation offerts",
+      "type": "activationFee",
+      "calculation": {
+        "method": "free",
+        "value": 0,
+        "duration": -1
+      },
+      "calculationOrder": 14,
+      "excludedPromos": [],
+      "startDate": "2025-08-31T22:00:00",
+      "endDate": "2025-09-05T06:59:59",
+      "productIDs": [
+        "54806",
+        "54811"
+      ],
+      "optionIDs": [],
+      "promoCodeIDs": [],
+      "rules": [
+        {
+          "type": "hasProductInGroup",
+          "parameters": [
+            "54781"
+          ]
+        },
+        {
+          "type": "hasProductInGroup",
+          "parameters": [
+            "54776"
+          ]
+        }
+      ],
+      "label": [],
+      "legalSummary": "\u003Cp\u003E\u003Cstrong\u003EPromo : Frais de mise en service offerts\u003C/strong\u003E\u003C/p\u003E",
+      "legalInfo": "Offre valable du 01/09/2025 jusqu'au 29/09/2025 inclus. Vous bénéficiez gratuitement des frais de mise en service (d'une valeur de 39 €) pour votre nouvel abonnement au service internet Orange.",
+      "isChoice": false,
+      "price": {
+        "monthlyPrice": 0,
+        "deviceFee": 0,
+        "activationFee": 0,
+        "installationFee": 0
+      }
+    },
+    {
+      "_id": "56191",
+      "epcID": "AO000111",
+      "name": "Promo :",
+      "type": "discount",
+      "calculation": {
+        "method": "amount",
+        "value": 10,
+        "duration": 6
+      },
+      "calculationOrder": 15,
+      "excludedPromos": [],
+      "startDate": "2025-06-23T06:00:00",
+      "endDate": "2025-08-11T21:59:59",
+      "productIDs": [
+        "54796",
+        "55406"
+      ],
+      "optionIDs": [],
+      "promoCodeIDs": [],
+      "rules": [
+        {
+          "type": "hasProductInGroup",
+          "parameters": [
+            "54781"
+          ]
+        }
+      ],
+      "label": [],
+      "legalSummary": "\u003Cp\u003E\u003Cstrong\u003EPromo : Abonnement Internet illimité 200 Mbps -10€ pendant 6 mois, dans votre pack Love\u003C/strong\u003E\u003C/p\u003E",
+      "legalInfo": "Offre valable du 23/06/2025 jusqu'au 11/08/2025 inclus, pour toute nouvelle souscription à un abonnement Love (Mobile + Internet avec ou sans Orange TV / Orange TV-Lite) minimum. \r\nVous bénéficiez de 10 EUR (TVA comprise) de réduction par mois sur l'offre Internet illimité 200 Mbps durant 6 mois.",
+      "isChoice": false,
+      "specs": {
+        "description": "-10 € pendant 6 mois"
+      },
+      "price": {
+        "monthlyPrice": 0,
+        "deviceFee": 0,
+        "activationFee": 0,
+        "installationFee": 0
+      }
+    },
+    {
+      "_id": "56186",
+      "epcID": "AO000111",
+      "name": "Promo :",
+      "type": "discount",
+      "calculation": {
+        "method": "amount",
+        "value": 10,
+        "duration": 6
+      },
+      "calculationOrder": 16,
+      "excludedPromos": [],
+      "startDate": "2025-06-23T05:30:00",
+      "endDate": "2025-08-11T21:59:59",
+      "productIDs": [
+        "54801",
+        "54816",
+        "54806",
+        "54811"
+      ],
+      "optionIDs": [],
+      "promoCodeIDs": [],
+      "rules": [
+        {
+          "type": "hasProductInGroup",
+          "parameters": [
+            "54781"
+          ]
+        }
+      ],
+      "label": [],
+      "legalSummary": "\u003Cp\u003E\u003Cstrong\u003EPromo : Abonnement Internet illimité 500 Mbps / 1000 Mbps -10€ pendant 6 mois, dans votre pack Love\u003C/strong\u003E\u003C/p\u003E",
+      "legalInfo": "Offre valable du 23/06/2025 jusqu'au 11/08/2025 inclus, pour toute nouvelle souscription à un abonnement Love (Mobile + Internet avec ou sans Orange TV / Orange TV-Lite) minimum. \r\nVous bénéficiez de 10 EUR (TVA comprise) de réduction par mois sur l'offre Internet illimité 500 ou 1000 Mbps durant 6 mois.",
+      "isChoice": false,
+      "specs": {
+        "description": "-10 € pendant 6 mois"
+      },
+      "price": {
+        "monthlyPrice": 0,
+        "deviceFee": 0,
+        "activationFee": 0,
+        "installationFee": 0
+      }
+    },
+    {
+      "_id": "56081",
+      "epcID": "AO006338",
+      "name": "Web promo :",
+      "type": "discount",
+      "calculation": {
+        "method": "amount",
+        "value": 15,
+        "duration": 6
+      },
+      "calculationOrder": 17,
+      "excludedPromos": [
+        "54981"
+      ],
+      "startDate": "2025-04-15T06:00:00",
+      "endDate": "2025-04-28T21:59:59",
+      "productIDs": [
+        "54801",
+        "54816"
+      ],
+      "optionIDs": [],
+      "promoCodeIDs": [],
+      "rules": [
+        {
+          "type": "hasProduct",
+          "parameters": [
+            "54831",
+            "54836"
+          ]
+        }
+      ],
+      "label": [],
+      "legalSummary": "\u003Cp\u003E\u003Cstrong\u003EExclu web : Abonnement Internet Zen Fiber -15€ pendant 6 mois, dans votre pack Love\u003C/strong\u003E\u003C/p\u003E",
+      "legalInfo": "Offre valable du 15/04/2025 jusqu’au 28/04/2025 inclus, pour toute nouvelle souscription à un abonnement Love (Mobile Medium / Large + Internet avec ou sans Orange TV / Orange TV-Lite) avec Zen Fiber.\r\nVous bénéficiez de 15 EUR (TVA comprise) de réduction par mois sur l'offre Internet Zen Fiber durant 6 mois.",
+      "isChoice": false,
+      "specs": {
+        "description": "-15€ pendant 6 mois"
+      },
+      "price": {
+        "monthlyPrice": 0,
+        "deviceFee": 0,
+        "activationFee": 0,
+        "installationFee": 0
+      }
+    },
+    {
+      "_id": "56091",
+      "name": "Promo web :",
+      "type": "discount",
+      "calculation": {
+        "method": "amount",
+        "value": 4,
+        "duration": 6
+      },
+      "calculationOrder": 18,
+      "excludedPromos": [],
+      "startDate": "2025-04-17T06:00:00",
+      "endDate": "2025-06-05T21:59:59",
+      "productIDs": [
+        "54836"
+      ],
+      "optionIDs": [],
+      "promoCodeIDs": [],
+      "rules": [
+        {
+          "type": "hasOnlyProductInGroup",
+          "parameters": [
+            "54781"
+          ]
+        },
+        {
+          "type": "itemNumber",
+          "parameters": [0]
+        }
+      ],
+      "label": [],
+      "legalSummary": "\u003Cp\u003E\u003Cstrong\u003EOrange Mobile Large - Promo web : -4€ pendant 6 mois\u003C/strong\u003E\u003C/p\u003E",
+      "legalInfo": "\u003Cp\u003EOffre valable du 17/04/2025 jusqu’au&nbsp;22/06/2025&nbsp;inclus, pour toute nouvelle souscription en ligne à un abonnement Orange Mobile Large. Vous bénéficiez désormais d’une promotion de 4 € par mois sur vos abonnements éligibles pendant 6 mois. Cette réduction reste valable tant que l'abonnement mobile reste actif. A l’issue de la période des 6 mois, vous conserverez votre abonnement mobile et le montant de votre abonnement mensuel sera sans la promotion.\u003C/p\u003E",
+      "isChoice": false,
+      "specs": {
+        "description": "-4€ pendant 6 mois"
+      },
+      "price": {
+        "monthlyPrice": 0,
+        "deviceFee": 0,
+        "activationFee": 0,
+        "installationFee": 0
+      }
+    },
+    {
+      "_id": "56116",
+      "name": "Promo web :",
+      "type": "discount",
+      "calculation": {
+        "method": "amount",
+        "value": 4,
+        "duration": 12
+      },
+      "calculationOrder": 19,
+      "excludedPromos": [],
+      "startDate": "2025-06-25T06:00:00",
+      "endDate": "2025-08-11T21:59:59",
+      "productIDs": [
+        "54836"
+      ],
+      "optionIDs": [],
+      "promoCodeIDs": [],
+      "rules": [
+        {
+          "type": "hasOnlyProductInGroup",
+          "parameters": [
+            "54781"
+          ]
+        }
+      ],
+      "label": [],
+      "legalSummary": "\u003Cp\u003E\u003Cstrong\u003EOrange Mobile Large - Promo web : -4€ pendant 12 mois\u003C/strong\u003E\u003C/p\u003E",
+      "legalInfo": "\u003Cp\u003E\u003Cspan data-teams=\"true\"\u003EOffre valable du 25/06/2025 jusqu’au&nbsp;11/08/2025 inclus, pour toute nouvelle souscription en ligne à un abonnement Orange Mobile Large. Vous bénéficiez désormais d’une promotion de 4 € par mois sur vos abonnements éligibles pendant 12 mois. Cette réduction reste valable tant que l'abonnement mobile reste actif. A l’issue de la période des 12 mois, vous conserverez votre abonnement mobile et le montant de votre abonnement mensuel sera sans la promotion.\u003C/span\u003E\u003C/p\u003E",
+      "isChoice": false,
+      "specs": {
+        "description": "-4€ pendant 12 mois"
+      },
+      "price": {
+        "monthlyPrice": 0,
+        "deviceFee": 0,
+        "activationFee": 0,
+        "installationFee": 0
+      }
+    },
+    {
+      "_id": "55391",
+      "name": "Promo web :",
+      "type": "discount",
+      "calculation": {
+        "method": "amount",
+        "value": 9,
+        "duration": 12
+      },
+      "calculationOrder": 20,
+      "excludedPromos": [],
+      "startDate": "2024-11-04T06:50:00",
+      "endDate": "2024-12-01T22:59:59",
+      "productIDs": [
+        "54836"
+      ],
+      "optionIDs": [],
+      "promoCodeIDs": [],
+      "rules": [
+        {
+          "type": "hasOnlyProductInGroup",
+          "parameters": [
+            "54781"
+          ]
+        }
+      ],
+      "label": [],
+      "legalSummary": "\u003Cp\u003E\u003Cstrong\u003EOrange Mobile Large - Promo web : -9€ pendant 12 mois\u003C/strong\u003E\u003C/p\u003E\r\n",
+      "legalInfo": "\u003Cp\u003EOffre valable du 05/11/2024 jusqu’au 01/12/2024&nbsp;inclus, pour toute nouvelle souscription en ligne à un abonnement Orange Mobile Large. Vous bénéficiez désormais d’une promotion de 9 € par mois sur vos abonnements éligibles pendant 12 mois. Cette réduction reste valable tant que l'abonnement mobile reste actif. A l’issue de la période des 12 mois, vous conserverez votre abonnement mobile et le montant de votre abonnement mensuel sera sans la promotion.​\u003C/p\u003E\r\n",
+      "isChoice": false,
+      "specs": {
+        "description": "-9€ pendant 12 mois"
+      },
+      "price": {
+        "monthlyPrice": 0,
+        "deviceFee": 0,
+        "activationFee": 0,
+        "installationFee": 0
+      }
+    },
+    {
+      "_id": "55431",
+      "name": "Promo web :",
+      "type": "discount",
+      "calculation": {
+        "method": "amount",
+        "value": 6,
+        "duration": -1
+      },
+      "calculationOrder": 21,
+      "excludedPromos": [],
+      "startDate": "2025-01-02T05:20:00",
+      "endDate": "2025-02-03T22:59:59",
+      "productIDs": [
+        "54836"
+      ],
+      "optionIDs": [],
+      "promoCodeIDs": [],
+      "rules": [
+        {
+          "type": "hasOnlyProductInGroup",
+          "parameters": [
+            "54781"
+          ]
+        }
+      ],
+      "label": [
+        {
+          "_id": "54966",
+          "name": "Promo web",
+          "style": "yellow"
+        }
+      ],
+      "legalSummary": "\u003Cp\u003E\u003Cstrong\u003EOrange Mobile Large - Promo web&nbsp;: -6€ pendant la durée de votre contrat\u003C/strong\u003E\u003C/p\u003E",
+      "legalInfo": "\u003Cp\u003EOffre valable du 02/01/2025 jusqu'au 03/02/2025, pour toute nouvelle souscription en ligne à un abonnement Orange Mobile Large. Vous bénéficiez d'une réduction de 6€ sur votre Orange Mobile Large durant toute la durée de votre contrat. Cette réduction reste valable tant que l'abonnement mobile reste actif. L'offre n'est pas compatible avec l'avantage multi-produits ou toute autre promotion sur votre Orange Mobile Large.\u003C/p\u003E",
+      "isChoice": false,
+      "specs": {
+        "description": "-6€ pendant la durée de votre contrat"
+      },
+      "price": {
+        "monthlyPrice": 0,
+        "deviceFee": 0,
+        "activationFee": 0,
+        "installationFee": 0
+      }
+    },
+    {
+      "_id": "56086",
+      "name": "Promo web :",
+      "type": "discount",
+      "calculation": {
+        "method": "amount",
+        "value": 4,
+        "duration": 6
+      },
+      "calculationOrder": 22,
+      "excludedPromos": [],
+      "startDate": "2025-04-15T06:00:00",
+      "endDate": "2025-06-05T21:59:59",
+      "productIDs": [
+        "54831"
+      ],
+      "optionIDs": [],
+      "promoCodeIDs": [],
+      "rules": [
+        {
+          "type": "hasOnlyProductInGroup",
+          "parameters": [
+            "54781"
+          ]
+        },
+        {
+          "type": "itemNumber",
+          "parameters": [0]
+        }
+      ],
+      "label": [],
+      "legalSummary": "\u003Cp\u003E\u003Cstrong\u003EOrange Mobile Medium - Promo web : -4€ pendant 6 mois\u003C/strong\u003E\u003C/p\u003E",
+      "legalInfo": "\u003Cp data-prosemirror-content-type=\"node\" data-prosemirror-node-name=\"paragraph\" data-prosemirror-node-block=\"true\" data-pm-slice=\"1 1 []\"\u003EOffre valable du 15/04/2025 jusqu’au&nbsp;22/06/2025&nbsp;inclus, pour toute nouvelle souscription en ligne à un abonnement Orange Mobile Medium. Vous bénéficiez désormais d’une promotion de 4 € par mois sur vos abonnements éligibles pendant 6 mois. Cette réduction reste valable tant que l'abonnement mobile reste actif. A l’issue de la période des 6 mois, vous conserverez votre abonnement mobile et le montant de votre abonnement mensuel sera sans la promotion.\u003C/p\u003E",
+      "isChoice": false,
+      "specs": {
+        "description": "-4€ pendant 6 mois"
+      },
+      "price": {
+        "monthlyPrice": 0,
+        "deviceFee": 0,
+        "activationFee": 0,
+        "installationFee": 0
+      }
+    },
+    {
+      "_id": "54991",
+      "name": "Promo web :",
+      "type": "discount",
+      "calculation": {
+        "method": "amount",
+        "value": 4,
+        "duration": 12
+      },
+      "calculationOrder": 23,
+      "excludedPromos": [],
+      "startDate": "2025-06-25T06:00:00",
+      "endDate": "2025-08-11T21:59:59",
+      "productIDs": [
+        "54831"
+      ],
+      "optionIDs": [],
+      "promoCodeIDs": [],
+      "rules": [
+        {
+          "type": "hasOnlyProductInGroup",
+          "parameters": [
+            "54781"
+          ]
+        }
+      ],
+      "label": [],
+      "legalSummary": "\u003Cp\u003E\u003Cstrong\u003EOrange Mobile Medium - Promo web : -4€ pendant 12 mois\u003C/strong\u003E\u003C/p\u003E",
+      "legalInfo": "\u003Cp\u003EOffre valable du 25/06/2025 jusqu'au 11/08/2025 inclus, \u003Cspan data-teams=\"true\"\u003Epour toute nouvelle souscription en ligne à un abonnement Orange Mobile Medium. Vous bénéficiez désormais d’une promotion de 4 € par mois sur vos abonnements éligibles pendant 12 mois. Cette réduction reste valable tant que l'abonnement mobile reste actif. A l’issue de la période des 12 mois, vous conserverez votre abonnement mobile et le montant de votre abonnement mensuel sera sans la promotion.\u003C/span\u003E\u003C/p\u003E",
+      "isChoice": false,
+      "specs": {
+        "description": "-4€ pendant 12 mois"
+      },
+      "price": {
+        "monthlyPrice": 0,
+        "deviceFee": 0,
+        "activationFee": 0,
+        "installationFee": 0
+      }
+    },
+    {
+      "_id": "56096",
+      "name": "Exclu web :",
+      "type": "data",
+      "calculation": {
+        "method": "amount",
+        "value": 20,
+        "duration": -1
+      },
+      "calculationOrder": 24,
+      "excludedPromos": [],
+      "startDate": "2025-05-27T06:00:00",
+      "endDate": "2025-11-06T22:59:59",
+      "productIDs": [
+        "54831",
+        "54836"
+      ],
+      "optionIDs": [],
+      "promoCodeIDs": [],
+      "rules": [
+        {
+          "type": "hasProductInGroup",
+          "parameters": [
+            "54781"
+          ]
+        }
+      ],
+      "label": [
+        {
+          "_id": "55381",
+          "name": "Exclu web",
+          "style": "yellow"
+        }
+      ],
+      "legalSummary": "\u003Cp\u003E\u003Cstrong\u003EExclu web : +20 GB \u003C/strong\u003E\u003Cstrong data-prosemirror-content-type=\"mark\" data-prosemirror-mark-name=\"strong\"\u003Ependant toute la durée de votre contrat\u003C/strong\u003E\u003C/p\u003E",
+      "legalInfo": "Pour chaque nouvelle activation de carte (mobile uniquement ou en abonnement Love) ou lors de l'ajout d'un abonnement internet à votre abonnement Orange Mobile Medium ou Large existant, entre le 30/09/2025 et le 6/11/2025 inclus, vous bénéficiez de 20 GB supplémentaires sur votre abonnement Orange Mobile Medium et/ou Mobile Large pour la durée du contrat sans frais supplémentaires. Vous ne pouvez bénéficier de cette offre qu'une seule fois par numéro de GSM. Vous continuerez à bénéficier des 20 GB supplémentaires tant que votre abonnement Orange Mobile Medium ou Mobile Large restera actif.",
+      "isChoice": false,
+      "specs": {
+        "description": "20 GB Extra",
+        "extratitle": "+20GB"
+      },
+      "price": {
+        "monthlyPrice": 0,
+        "deviceFee": 0,
+        "activationFee": 0,
+        "installationFee": 0
+      }
+    },
+    {
+      "_id": "55451",
+      "epcID": "AO006208",
+      "name": "Promo :",
+      "type": "discount",
+      "calculation": {
+        "method": "amount",
+        "value": 10,
+        "duration": 6
+      },
+      "calculationOrder": 26,
+      "excludedPromos": [],
+      "startDate": "2025-02-04T05:30:00",
+      "endDate": "2025-06-03T05:59:59",
+      "productIDs": [
+        "54806",
+        "54811"
+      ],
+      "optionIDs": [],
+      "promoCodeIDs": [],
+      "rules": [
+        {
+          "type": "hasProductInGroup",
+          "parameters": [
+            "54781"
+          ]
+        }
+      ],
+      "label": [],
+      "legalSummary": "\u003Cp\u003E\u003Cstrong\u003EPromo : Abonnement Internet Giga Fiber -10€ pendant 6 mois, dans votre pack Love​\u003C/strong\u003E\u003C/p\u003E",
+      "legalInfo": "Offre valable du 01/04/2025 jusqu'au 02/06/2025 inclus, pour toute nouvelle souscription à un abonnement Love (Mobile + Internet avec ou sans Orange TV / Orange TV-Lite) minimum.\u003Cbr\u003E\r\nVous bénéficiez de 10 EUR (TVA comprise) de réduction par mois sur l'offre Internet Giga Fiber durant 6 mois.",
+      "isChoice": false,
+      "specs": {
+        "description": "-10€ pendant 6 mois"
+      },
+      "price": {
+        "monthlyPrice": 0,
+        "deviceFee": 0,
+        "activationFee": 0,
+        "installationFee": 0
+      }
+    },
+    {
+      "_id": "56106",
+      "epcID": "AO006247",
+      "name": "Promo :",
+      "type": "discount",
+      "calculation": {
+        "method": "amount",
+        "value": 10,
+        "duration": 12
+      },
+      "calculationOrder": 27,
+      "excludedPromos": [],
+      "startDate": "2025-06-03T06:00:00",
+      "endDate": "2025-06-23T05:29:59",
+      "productIDs": [
+        "54806",
+        "54811"
+      ],
+      "optionIDs": [],
+      "promoCodeIDs": [],
+      "rules": [
+        {
+          "type": "hasProductInGroup",
+          "parameters": [
+            "54781"
+          ]
+        }
+      ],
+      "label": [],
+      "legalSummary": "\u003Cp\u003E\u003Cstrong\u003EPromo : Abonnement Internet Giga Fiber -10€ pendant 12 mois, dans votre pack Love​\u003C/strong\u003E\u003C/p\u003E",
+      "legalInfo": "Offre valable du 03/06/2025 jusqu'au 11/08/2025 inclus, pour toute nouvelle souscription à un abonnement Love (Mobile + Internet avec ou sans Orange TV / Orange TV-Lite) minimum.\u003Cbr\u003E\r\nVous bénéficiez de 10 EUR (TVA comprise) de réduction par mois sur l'offre Internet Giga Fiber durant 12 mois.",
+      "isChoice": false,
+      "specs": {
+        "description": "-10€ pendant 12 mois"
+      },
+      "price": {
+        "monthlyPrice": 0,
+        "deviceFee": 0,
+        "activationFee": 0,
+        "installationFee": 0
+      }
+    },
+    {
+      "_id": "55401",
+      "name": "Promo :",
+      "type": "discount",
+      "calculation": {
+        "method": "amount",
+        "value": 15,
+        "duration": 12
+      },
+      "calculationOrder": 28,
+      "excludedPromos": [],
+      "startDate": "2024-11-08T06:00:00",
+      "endDate": "2025-02-03T22:59:59",
+      "productIDs": [
+        "54811",
+        "54806"
+      ],
+      "optionIDs": [],
+      "promoCodeIDs": [],
+      "rules": [
+        {
+          "type": "hasProductInGroup",
+          "parameters": [
+            "54781"
+          ]
+        }
+      ],
+      "label": [],
+      "legalSummary": "\u003Cp\u003E\u003Cstrong\u003EWeb promo : Abonnement Internet Giga Fiber -15€ pendant 12 mois, dans votre pack Love​\u003C/strong\u003E\u003C/p\u003E",
+      "legalInfo": "Offre valable du 02/01/2025 jusqu’au 03/02/2025 inclus, pour toute nouvelle souscription à un abonnement Love (Mobile + Internet avec ou sans Orange TV / Orange TV-Lite) minimum. Vous bénéficiez de 15 EUR (TVA comprise) de réduction par mois sur l'offre Internet Giga Fiber. ",
+      "isChoice": false,
+      "specs": {
+        "description": "-15€ pendant 12 mois"
+      },
+      "price": {
+        "monthlyPrice": 0,
+        "deviceFee": 0,
+        "activationFee": 0,
+        "installationFee": 0
+      }
+    },
+    {
+      "_id": "54986",
+      "name": "Promo:",
+      "type": "discount",
+      "calculation": {
+        "method": "amount",
+        "value": 20,
+        "duration": 12
+      },
+      "calculationOrder": 29,
+      "excludedPromos": [],
+      "startDate": "2024-09-30T22:00:01",
+      "endDate": "2024-11-07T22:59:59",
+      "productIDs": [
+        "54806",
+        "54811"
+      ],
+      "optionIDs": [],
+      "promoCodeIDs": [],
+      "rules": [
+        {
+          "type": "hasProductInGroup",
+          "parameters": [
+            "54781"
+          ]
+        }
+      ],
+      "label": [],
+      "legalSummary": "\u003Cp\u003E\u003Cstrong\u003EPromo : Giga Fiber au prix de Start Fiber pendant 12 mois\u003C/strong\u003E\u003C/p\u003E\r\n",
+      "legalInfo": "\u003Cp\u003EOffre valable du 01/10/2024 jusqu’au 07/11/2024 inclus, pour toute nouvelle souscription à un abonnement Love (Mobile + Internet avec ou sans Orange TV / Orange TV Lite) minimum. Vous bénéficiez de 20 € de réduction par mois sur l'offre Internet Giga.\u003C/p\u003E\r\n",
+      "isChoice": false,
+      "specs": {
+        "description": "-20€ pendant 12 mois"
+      },
+      "price": {
+        "monthlyPrice": 0,
+        "deviceFee": 0,
+        "activationFee": 0,
+        "installationFee": 0
+      }
+    },
+    {
+      "_id": "54981",
+      "epcID": "AO006212",
+      "name": "Promo :",
+      "type": "discount",
+      "calculation": {
+        "method": "amount",
+        "value": 10,
+        "duration": 6
+      },
+      "calculationOrder": 30,
+      "excludedPromos": [],
+      "startDate": "2025-04-01T06:00:00",
+      "endDate": "2025-06-03T05:59:59",
+      "productIDs": [
+        "54801",
+        "54816"
+      ],
+      "optionIDs": [],
+      "promoCodeIDs": [],
+      "rules": [
+        {
+          "type": "hasProductInGroup",
+          "parameters": [
+            "54781"
+          ]
+        }
+      ],
+      "label": [],
+      "legalSummary": "\u003Cp\u003E\u003Cstrong\u003EPromo : Abonnement Internet Zen Fiber -10€ pendant 6 mois, dans votre pack Love​​\u003C/strong\u003E\u003C/p\u003E",
+      "legalInfo": "Offre valable du 01/04/2025 jusqu'au 02/06/2025 inclus, pour toute nouvelle souscription à un abonnement Love (Mobile + Internet avec ou sans Orange TV / Orange TV-Lite) minimum.\r\nVous bénéficiez de 10 EUR (TVA comprise) de réduction par mois sur l'offre Internet Zen Fiber durant 6 mois.",
+      "isChoice": false,
+      "specs": {
+        "description": "-10€ pendant 6 mois"
+      },
+      "price": {
+        "monthlyPrice": 0,
+        "deviceFee": 0,
+        "activationFee": 0,
+        "installationFee": 0
+      }
+    },
+    {
+      "_id": "56111",
+      "epcID": "AO006247",
+      "name": "Promo :",
+      "type": "discount",
+      "calculation": {
+        "method": "amount",
+        "value": 10,
+        "duration": 12
+      },
+      "calculationOrder": 31,
+      "excludedPromos": [],
+      "startDate": "2025-06-03T06:00:00",
+      "endDate": "2025-06-23T05:29:59",
+      "productIDs": [
+        "54801",
+        "54816"
+      ],
+      "optionIDs": [],
+      "promoCodeIDs": [],
+      "rules": [
+        {
+          "type": "hasProductInGroup",
+          "parameters": [
+            "54781"
+          ]
+        }
+      ],
+      "label": [],
+      "legalSummary": "\u003Cp\u003E\u003Cstrong\u003EPromo : Abonnement Internet Zen Fiber -10€ pendant 12 mois, dans votre pack Love​​\u003C/strong\u003E\u003C/p\u003E",
+      "legalInfo": "Offre valable du 03/06/2025 jusqu'au 11/08/2025 inclus, pour toute nouvelle souscription à un abonnement Love (Mobile + Internet avec ou sans Orange TV / Orange TV-Lite) minimum.\u003Cbr/\u003E\r\nVous bénéficiez de 10 EUR (TVA comprise) de réduction par mois sur l'offre Internet Zen Fiber durant 12 mois.",
+      "isChoice": false,
+      "specs": {
+        "description": "-10€ pendant 12 mois"
+      },
+      "price": {
+        "monthlyPrice": 0,
+        "deviceFee": 0,
+        "activationFee": 0,
+        "installationFee": 0
+      }
+    },
+    {
+      "_id": "55396",
+      "epcID": "AO006297",
+      "name": "Promo :",
+      "type": "discount",
+      "calculation": {
+        "method": "amount",
+        "value": 15,
+        "duration": 12
+      },
+      "calculationOrder": 32,
+      "excludedPromos": [],
+      "startDate": "2025-03-05T07:00:00",
+      "endDate": "2025-04-01T05:59:59",
+      "productIDs": [
+        "54801",
+        "54816"
+      ],
+      "optionIDs": [],
+      "promoCodeIDs": [],
+      "rules": [
+        {
+          "type": "hasProduct",
+          "parameters": [
+            "54826"
+          ]
+        }
+      ],
+      "label": [],
+      "legalSummary": "\u003Cp\u003E\u003Cstrong\u003EWeb promo : Abonnement Internet Zen Fiber -15€ pendant 12 mois, dans votre pack Love​\u003C/strong\u003E\u003C/p\u003E",
+      "legalInfo": "\u003Cp\u003EOffre valable du 05/03/2025 jusqu’au 31/03/2025 inclus, pour toute nouvelle souscription à un abonnement Love (Mobile + Internet avec ou sans Orange TV / Orange TV-Lite) minimum. ​​Vous bénéficiez de 15 EUR (TVA comprise) de réduction par mois sur l'offre Internet Zen Fiber.\u003C/p\u003E",
+      "isChoice": false,
+      "specs": {
+        "description": "-15€ pendant 12 mois"
+      },
+      "price": {
+        "monthlyPrice": 0,
+        "deviceFee": 0,
+        "activationFee": 0,
+        "installationFee": 0
+      }
+    },
+    {
+      "_id": "55446",
+      "epcID": "AO006212",
+      "name": "Promo :",
+      "type": "discount",
+      "calculation": {
+        "method": "amount",
+        "value": 10,
+        "duration": 6
+      },
+      "calculationOrder": 33,
+      "excludedPromos": [],
+      "startDate": "2025-06-03T06:00:00",
+      "endDate": "2025-06-23T05:29:59",
+      "productIDs": [
+        "54796",
+        "55406"
+      ],
+      "optionIDs": [],
+      "promoCodeIDs": [],
+      "rules": [
+        {
+          "type": "hasProductInGroup",
+          "parameters": [
+            "54781"
+          ]
+        }
+      ],
+      "label": [],
+      "legalSummary": "\u003Cp\u003E\u003Cstrong\u003EPromo : Abonnement Internet Start Fiber -10€ pendant 6 mois, dans votre pack Love​​\u003C/strong\u003E\u003C/p\u003E",
+      "legalInfo": "Offre valable du 03/06/2025 jusqu’au 11/08/2025 inclus, pour toute nouvelle souscription en ligne à un abonnement Love (Mobile + Internet avec ou sans Orange TV / Orange TV Lite) minimum avec Start Fiber.\u003Cbr\u003EVous bénéficiez de 10 EUR (TVA comprise) de réduction par mois sur l'offre Internet Start Fiber durant 6 mois.",
+      "isChoice": false,
+      "specs": {
+        "description": "-10€ pendant 6 mois"
+      },
+      "price": {
+        "monthlyPrice": 0,
+        "deviceFee": 0,
+        "activationFee": 0,
+        "installationFee": 0
+      }
+    },
+    {
+      "_id": "56071",
+      "epcID": "AO006338",
+      "name": "Promo :",
+      "type": "discount",
+      "calculation": {
+        "method": "amount",
+        "value": 15,
+        "duration": 6
+      },
+      "calculationOrder": 34,
+      "excludedPromos": [],
+      "startDate": "2025-04-01T06:00:00",
+      "endDate": "2025-06-03T05:59:59",
+      "productIDs": [
+        "54796",
+        "55406"
+      ],
+      "optionIDs": [],
+      "promoCodeIDs": [],
+      "rules": [
+        {
+          "type": "hasProductInGroup",
+          "parameters": [
+            "54781"
+          ]
+        }
+      ],
+      "label": [],
+      "legalSummary": "\u003Cp\u003E\u003Cstrong\u003EPromo : Abonnement Internet Start Fiber -15€ pendant 6 mois, dans votre pack Love​​\u003C/strong\u003E\u003C/p\u003E",
+      "legalInfo": "Offre valable du 01/04/2025 jusqu'au 02/06/2025 inclus, pour toute nouvelle souscription en ligne à un abonnement Love (Mobile + Internet avec ou sans Orange TV / Orange TV Lite) minimum avec Start Fiber.\r\n\r\nVous bénéficiez de 15 EUR (TVA comprise) de réduction par mois sur l'offre Internet Start Fiber durant 6 mois.",
+      "isChoice": false,
+      "specs": {
+        "description": "-15€ pendant 6 mois"
+      },
+      "price": {
+        "monthlyPrice": 0,
+        "deviceFee": 0,
+        "activationFee": 0,
+        "installationFee": 0
+      }
+    },
+    {
+      "_id": "54976",
+      "name": "Promo :",
+      "type": "discount",
+      "calculation": {
+        "method": "amount",
+        "value": 15,
+        "duration": 12
+      },
+      "calculationOrder": 35,
+      "excludedPromos": [],
+      "startDate": "2024-11-08T06:00:00",
+      "endDate": "2025-02-03T22:59:59",
+      "productIDs": [
+        "54796",
+        "55406"
+      ],
+      "optionIDs": [],
+      "promoCodeIDs": [],
+      "rules": [
+        {
+          "type": "hasProductInGroup",
+          "parameters": [
+            "54781"
+          ]
+        }
+      ],
+      "label": [],
+      "legalSummary": "\u003Cp\u003E\u003Cstrong\u003EPromo : Abonnement Internet Start Fiber -15€ pendant 12 mois, dans votre pack Love​​\u003C/strong\u003E\u003C/p\u003E",
+      "legalInfo": "Offre valable du 02/01/2025 jusqu’au 03/02/2025 inclus, pour toute nouvelle souscription en ligne à un abonnement Love (Mobile + Internet avec ou sans Orange TV / Orange TV Lite) minimum avec Start Fiber. Vous bénéficiez de 15 EUR (TVA comprise) de réduction par mois sur l'offre Internet Start Fiber durant 12 mois.",
+      "isChoice": false,
+      "specs": {
+        "description": "-15€ pendant 12 mois"
+      },
+      "price": {
+        "monthlyPrice": 0,
+        "deviceFee": 0,
+        "activationFee": 0,
+        "installationFee": 0
+      }
+    },
+    {
+      "_id": "55426",
+      "name": "Black Friday :",
+      "type": "discount",
+      "calculation": {
+        "method": "amount",
+        "value": 5,
+        "duration": 12
+      },
+      "calculationOrder": 36,
+      "excludedPromos": [],
+      "startDate": "2024-11-18T14:33:01",
+      "endDate": "2024-12-02T22:59:59",
+      "productIDs": [
+        "54801",
+        "54816"
+      ],
+      "optionIDs": [],
+      "promoCodeIDs": [],
+      "rules": [
+        {
+          "type": "hasProduct",
+          "parameters": [
+            "54831",
+            "54836"
+          ]
+        }
+      ],
+      "label": [
+        {
+          "_id": "55421",
+          "name": "Black Friday",
+          "style": "orange"
+        }
+      ],
+      "legalSummary": "\u003Cp\u003E\u003Cstrong\u003EBlack Friday Exclu web : Abonnement Internet Zen Fiber -5€ supplémentaires pendant 12 mois, dans votre pack Love\u003C/strong\u003E\u003C/p\u003E",
+      "legalInfo": "\u003Cp\u003EOffre valable du 18/11/2024 jusqu’au 02/12/2024 inclus, pour toute nouvelle souscription à un abonnement Love (Orange Mobile Medium ou Orange Mobile Large + Internet avec ou sans Orange TV / Orange TV-Lite) minimum. ​\u003C/p\u003E\u003Cp\u003E​Vous bénéficiez de 5 EUR (TVA comprise) de réduction supplémentaire par mois sur l'offre Internet Zen Fiber durant 12 mois.\u003C/p\u003E",
+      "isChoice": false,
+      "specs": {
+        "description": "-5€ supplémentaires pendant 12 mois"
+      },
+      "price": {
+        "monthlyPrice": 0,
+        "deviceFee": 0,
+        "activationFee": 0,
+        "installationFee": 0
+      }
+    },
+    {
+      "_id": "55371",
+      "epcID": "AO006300",
+      "name": "Web promo :",
+      "type": "discount",
+      "calculation": {
+        "method": "amount",
+        "value": 20,
+        "duration": 12
+      },
+      "calculationOrder": 37,
+      "excludedPromos": [
+        "55396"
+      ],
+      "startDate": "2025-02-18T07:00:00",
+      "endDate": "2025-03-05T06:59:59",
+      "productIDs": [
+        "54801",
+        "54816"
+      ],
+      "optionIDs": [],
+      "promoCodeIDs": [],
+      "rules": [
+        {
+          "type": "hasProduct",
+          "parameters": [
+            "54831",
+            "54836",
+            "54826"
+          ]
+        }
+      ],
+      "label": [
+        {
+          "_id": "55381",
+          "name": "Exclu web",
+          "style": "yellow"
+        }
+      ],
+      "legalSummary": "\u003Cp data-pm-slice=\"1 1 []\"\u003E\u003Cstrong\u003EExclu web : Abonnement Internet Zen Fiber -20€ pendant 12 mois, dans votre pack Love\u003C/strong\u003E\u003C/p\u003E",
+      "legalInfo": "\u003Cp data-prosemirror-content-type=\"node\" data-prosemirror-node-name=\"paragraph\" data-prosemirror-node-block=\"true\" data-pm-slice=\"1 1 []\"\u003EOffre valable du 18/02/2025 jusqu’au 04/03/2025 inclus, pour toute nouvelle souscription à un abonnement Love (Mobile + Internet avec ou sans Orange TV / Orange TV-Lite) minimum.​\u003C/p\u003E\u003Cp\u003E​Vous bénéficiez de 20 EUR (TVA comprise) de réduction par mois sur l'offre Internet Zen Fiber durant 12 mois.\u003C/p\u003E",
+      "isChoice": false,
+      "specs": {
+        "description": "-20€ pendant 12 mois"
+      },
+      "price": {
+        "monthlyPrice": 0,
+        "deviceFee": 0,
+        "activationFee": 0,
+        "installationFee": 0
+      }
+    },
+    {
+      "_id": "55046",
+      "name": "Internet illimité 500 Mbps + Netflix",
+      "type": "discount",
+      "calculation": {
+        "method": "amount",
+        "value": 5.99,
+        "duration": 6
+      },
+      "calculationOrder": 38,
+      "excludedPromos": [],
+      "startDate": "2024-10-23T07:00:00",
+      "endDate": "2025-12-05T22:59:59",
+      "productIDs": [
+        "54816"
+      ],
+      "optionIDs": [],
+      "promoCodeIDs": [],
+      "rules": [],
+      "label": [],
+      "legalSummary": "\u003Cp\u003E\u003Cstrong\u003ERéduction sur Internet illimité 500 Mbps + Netflix\u003C/strong\u003E\u003C/p\u003E",
+      "legalInfo": "Réduction sur les frais mensuels de 5,99€ sur le pack Internet illimité 500 Mbps + Netflix pendant 6 mois. Si vous résiliez votre option Netflix ou changez de plan tarifaire internet, la promotion sera automatiquement désactivée. A l’issue de la période de promotion, l'offre Internet illimité 500 Mbps + Netflix vous sera facturée automatiquement au prix standard hors promotion.",
+      "isChoice": false,
+      "specs": {
+        "description": "-5,99€ pendant 6 mois"
+      },
+      "price": {
+        "monthlyPrice": 0,
+        "deviceFee": 0,
+        "activationFee": 0,
+        "installationFee": 0
+      }
+    },
+    {
+      "_id": "54996",
+      "name": "Internet illimité 500 Mbps + Netflix",
+      "type": "discount",
+      "calculation": {
+        "method": "amount",
+        "value": 5.99,
+        "duration": 6
+      },
+      "calculationOrder": 39,
+      "excludedPromos": [],
+      "startDate": "2024-10-13T22:00:01",
+      "endDate": "2028-12-07T22:59:59",
+      "productIDs": [
+        "54801"
+      ],
+      "optionIDs": [],
+      "promoCodeIDs": [],
+      "rules": [
+        {
+          "type": "hasOption",
+          "parameters": [
+            "54891"
+          ]
+        }
+      ],
+      "label": [],
+      "legalSummary": "\u003Cp\u003E\u003Cstrong\u003ERéduction sur Internet illimité 500 Mbps + Netflix\u003C/strong\u003E\u003C/p\u003E",
+      "legalInfo": "Réduction sur les frais mensuels de 5,99€ sur le pack Internet illimité 500 Mbps + Netflix pendant 6 mois. Si vous résiliez votre option Netflix ou changez de plan tarifaire internet, la promotion sera automatiquement désactivée. A l’issue de la période de promotion, l'offre Internet illimité 500 Mbps + Netflix vous sera facturée automatiquement au prix standard hors promotion.",
+      "isChoice": false,
+      "specs": {
+        "description": "-5,99€ pendant 6 mois"
+      },
+      "price": {
+        "monthlyPrice": 0,
+        "deviceFee": 0,
+        "activationFee": 0,
+        "installationFee": 0
+      }
+    }
+  ]
+}
