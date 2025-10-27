@@ -1,0 +1,68 @@
+# ============================================================================
+# Orange Belgium API - Docker Compose
+# ============================================================================
+# Runs API + PostgreSQL for local development
+
+version: '3.8'
+
+services:
+  # PostgreSQL Database
+  db:
+    image: postgres:14-alpine
+    container_name: orange-db
+    environment:
+      POSTGRES_DB: orange_belgium
+      POSTGRES_USER: orange_user
+      POSTGRES_PASSWORD: orange_pass
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./database_schema.sql:/docker-entrypoint-initdb.d/01-schema.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U orange_user -d orange_belgium"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # FastAPI Application
+  api:
+    build: .
+    container_name: orange-api
+    environment:
+      DATABASE_URL: postgresql://orange_user:orange_pass@db:5432/orange_belgium
+      ENVIRONMENT: development
+      API_HOST: 0.0.0.0
+      API_PORT: 8000
+    ports:
+      - "8000:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+    volumes:
+      - ./app:/app/app  # Mount app directory for hot reload
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+
+volumes:
+  postgres_data:
+
+# ============================================================================
+# Usage:
+#
+# Start services:
+#   docker-compose up -d
+#
+# View logs:
+#   docker-compose logs -f api
+#
+# Import data:
+#   docker-compose exec api python parse_orange_json.py \
+#     --json orange_full.json \
+#     --db-url postgresql://orange_user:orange_pass@db:5432/orange_belgium
+#
+# Stop services:
+#   docker-compose down
+#
+# Remove all data:
+#   docker-compose down -v
+# ============================================================================

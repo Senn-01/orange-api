@@ -1,0 +1,76 @@
+# ============================================================================
+# Orange Belgium API - Monthly Data Refresh
+# ============================================================================
+# Runs: 1st of every month at 2:00 AM (Brussels time)
+# Fetches latest Orange JSON and updates database
+
+name: Monthly Data Refresh
+
+on:
+  schedule:
+    # Cron: minute hour day month day-of-week
+    # 0 2 1 * * = At 02:00 on day 1 of every month
+    - cron: '0 2 1 * *'
+  
+  # Manual trigger (for testing)
+  workflow_dispatch:
+
+jobs:
+  refresh-data:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          pip install --no-cache-dir -r requirements.txt
+      
+      - name: Run data refresh
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}  # Optional
+        run: |
+          python refresh_orange_data.py
+      
+      - name: Verify API health
+        run: |
+          # Wait for API to process new data
+          sleep 10
+          
+          # Check health endpoint (adjust URL for your deployment)
+          curl -f ${{ secrets.API_URL }}/health || exit 1
+      
+      - name: Notify on failure
+        if: failure()
+        uses: 8398a7/action-slack@v3
+        with:
+          status: ${{ job.status }}
+          text: '🚨 Orange data refresh FAILED'
+          webhook_url: ${{ secrets.SLACK_WEBHOOK }}
+        # Skip if SLACK_WEBHOOK not configured
+        continue-on-error: true
+
+# ============================================================================
+# Setup Instructions:
+#
+# 1. In GitHub repo settings > Secrets, add:
+#    - DATABASE_URL: Your PostgreSQL connection string
+#    - API_URL: Your deployed API URL (e.g., https://your-app.herokuapp.com)
+#    - SLACK_WEBHOOK: (Optional) For failure notifications
+#
+# 2. The workflow will run automatically on the 1st of each month
+#
+# 3. To test manually:
+#    - Go to Actions tab > Monthly Data Refresh > Run workflow
+#
+# 4. To adjust schedule:
+#    - Edit the cron expression above
+#    - Use https://crontab.guru to help
+# ============================================================================

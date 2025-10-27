@@ -1,0 +1,74 @@
+# ============================================================================
+# Render Blueprint Configuration
+# ============================================================================
+# This file defines all services for automatic deployment on Render
+# Deploy with: Connect GitHub repo → Render auto-detects this file
+
+services:
+  # FastAPI Web Service
+  - type: web
+    name: orange-api
+    runtime: python
+    env: python
+    region: frankfurt  # or oregon, singapore
+    plan: starter  # €7/month | upgrade to standard for production
+    
+    # Build Configuration
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    
+    # Health Check
+    healthCheckPath: /health
+    
+    # Auto-deploy
+    branch: main
+    autoDeploy: true
+    
+    # Environment Variables
+    envVars:
+      - key: ENVIRONMENT
+        value: production
+      
+      - key: DATABASE_URL
+        fromDatabase:
+          name: orange-db
+          property: connectionString
+      
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      
+      - key: PORT
+        value: 8000
+
+# PostgreSQL Database
+databases:
+  - name: orange-db
+    databaseName: orange_belgium
+    user: orange_user
+    region: frankfurt  # Match web service region
+    plan: starter  # €7/month | includes 1GB storage
+    ipAllowList: []  # Empty = allow only Render services
+
+# ============================================================================
+# Alternative: Manual Configuration (if not using render.yaml)
+# ============================================================================
+# 
+# Create services manually in Render dashboard:
+#
+# 1. Web Service:
+#    - Name: orange-api
+#    - Runtime: Python 3
+#    - Build: pip install -r requirements.txt
+#    - Start: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+#    - Plan: Starter ($7/mo)
+#
+# 2. PostgreSQL:
+#    - Name: orange-db
+#    - Plan: Starter ($7/mo)
+#    - Connect to web service via internal connection string
+#
+# 3. Environment Variables:
+#    - ENVIRONMENT=production
+#    - DATABASE_URL=(auto-populated from database)
+#
+# ============================================================================
