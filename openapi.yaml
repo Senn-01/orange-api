@@ -1,0 +1,579 @@
+openapi: 3.0.2
+info:
+  title: Orange Belgium Subscription API
+  description: API for subscription bundle pricing, promotions, and recommendations
+  version: 1.0.0
+servers:
+  - url: http://localhost:8000
+    description: Local development
+  - url: https://orange-api.onrender.com
+    description: Production (Render)
+paths:
+  /:
+    get:
+      tags:
+        - Root
+      summary: Root
+      description: Root endpoint with API information
+      operationId: root__get
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                type: object
+  /health:
+    get:
+      tags:
+        - Health
+      summary: Health Check
+      description: Health check endpoint
+      operationId: health_check_health_get
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                  timestamp:
+                    type: string
+                  database:
+                    type: string
+                  groups_count:
+                    type: integer
+  /search:
+    post:
+      tags:
+        - Search
+      summary: AI-powered unified search for products and bundles
+      description: |
+        **Unified search endpoint designed for AI agents.**
+        
+        Search for products, bundles, and options using natural language queries or
+        structured criteria. Returns ranked results with relevance scores and recommendations.
+        
+        ## Natural Language Examples:
+        - "cheapest internet for a family of 4"
+        - "mobile plan with at least 60GB"
+        - "bundle with Netflix under 100 euros"
+        - "fastest internet with sports channels"
+        
+        ## Structured Search Examples:
+        - Budget-based: `{"budget_max": 80, "include_internet": true}`
+        - Speed-based: `{"internet_speed_min": 500, "budget_max": 70}`
+        - Family: `{"family_size": 4, "include_mobile": true, "include_tv": true}`
+        
+        ## Response:
+        Returns up to `limit` results ranked by relevance score (0-100).
+        Top 3 results are marked as `recommended: true`.
+      operationId: search_search_post
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SearchRequest'
+        required: true
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SearchResponse'
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /products:
+    get:
+      tags:
+        - Products
+      summary: Search products
+      description: |
+        Search for products with optional filters.
+        
+        - **group**: Filter by group slug (internet, mobile, tv)
+        - **min_price**: Minimum monthly price
+        - **max_price**: Maximum monthly price
+        - **keyword**: Search in product name/description
+        
+        Returns list of matching products with pricing information.
+      operationId: search_products_products_get
+      parameters:
+        - name: group
+          in: query
+          required: false
+          schema:
+            type: string
+        - name: min_price
+          in: query
+          required: false
+          schema:
+            type: number
+        - name: max_price
+          in: query
+          required: false
+          schema:
+            type: number
+        - name: keyword
+          in: query
+          required: false
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ProductSearchResponse'
+        '422':
+          description: Validation Error
+  /products/{product_id}:
+    get:
+      tags:
+        - Products
+      summary: Get product by ID
+      description: Get detailed information about a specific product.
+      operationId: get_product_products__product_id__get
+      parameters:
+        - name: product_id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ProductDetail'
+        '404':
+          description: Product not found
+  /options:
+    get:
+      tags:
+        - Options
+      summary: List available options
+      description: |
+        Get all available add-on options (Netflix, WiFi Comfort, etc.).
+        
+        Returns list of options with pricing.
+      operationId: list_options_options_get
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/OptionBase'
+  /options/compatible:
+    get:
+      tags:
+        - Options
+      summary: Get compatible options for products
+      description: |
+        Get options that are compatible with specific products.
+        
+        - **product_ids**: Comma-separated list of product IDs
+      operationId: get_compatible_options_options_compatible_get
+      parameters:
+        - name: product_ids
+          in: query
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/OptionBase'
+  /groups:
+    get:
+      tags:
+        - Groups
+      summary: List product groups
+      description: |
+        Get all product groups (Internet, Mobile, TV, Extra).
+        
+        Returns list of groups with IDs and slugs.
+      operationId: list_groups_groups_get
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/GroupBase'
+  /bundles/validate:
+    post:
+      tags:
+        - Bundles
+      summary: Validate if products can be bundled
+      description: Check if selected products can be combined into a bundle
+      operationId: validate_bundle_bundles_validate_post
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/BundleValidationRequest'
+        required: true
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BundleValidationResponse'
+  /bundles/calculate:
+    post:
+      tags:
+        - Bundles
+      summary: Calculate bundle pricing with timeline
+      description: |
+        Calculate complete pricing for a bundle of products and options.
+        
+        Returns:
+        - Monthly breakdown for duration
+        - All applicable discounts
+        - Promotional timeline
+        - Summary totals
+      operationId: calculate_bundle_bundles_calculate_post
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/BundleCalculationRequest'
+        required: true
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BundleCalculation'
+  /promotions:
+    get:
+      tags:
+        - Promotions
+      summary: List active promotions
+      description: Get all currently active promotions
+      operationId: list_promotions_promotions_get
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PromotionListResponse'
+components:
+  schemas:
+    SearchRequest:
+      type: object
+      properties:
+        query:
+          type: string
+          description: Natural language query (e.g., 'cheapest internet for family')
+        budget_max:
+          type: number
+          description: Maximum monthly budget in euros
+        budget_min:
+          type: number
+          description: Minimum monthly budget in euros
+        internet_speed_min:
+          type: integer
+          description: Minimum internet speed in Mbps
+        mobile_data_min:
+          type: integer
+          description: Minimum mobile data in GB
+        include_tv:
+          type: boolean
+          description: Must include TV service
+        include_mobile:
+          type: boolean
+          description: Must include mobile service
+        include_internet:
+          type: boolean
+          description: Must include internet service
+        family_size:
+          type: integer
+          description: Number of people in household
+        include_netflix:
+          type: boolean
+          description: Must include Netflix
+        include_sports:
+          type: boolean
+          description: Must include sports channels
+        limit:
+          type: integer
+          description: Maximum number of results to return
+          default: 10
+    SearchResultItem:
+      type: object
+      required:
+        - result_id
+        - result_type
+        - name
+        - description
+        - monthly_price
+        - relevance_score
+        - match_reasons
+        - recommended
+      properties:
+        result_id:
+          type: string
+          description: Unique identifier for this result
+        result_type:
+          type: string
+          description: 'Type: product, bundle, or option'
+        name:
+          type: string
+          description: Name of the product/bundle
+        description:
+          type: string
+          description: Description
+        monthly_price:
+          type: number
+          description: Total monthly price
+        relevance_score:
+          type: number
+          description: Relevance score (0-100)
+        match_reasons:
+          type: array
+          items:
+            type: string
+          description: Why this result matches the search
+        products:
+          type: array
+          items:
+            $ref: '#/components/schemas/ProductDetail'
+          description: Products included
+        options:
+          type: array
+          items:
+            $ref: '#/components/schemas/OptionBase'
+          description: Options included
+        bundle_details:
+          type: object
+          description: Bundle pricing breakdown
+        promotional_savings:
+          type: number
+          description: Monthly promotional savings
+        recommended:
+          type: boolean
+          description: Whether this is a top recommendation
+    SearchResponse:
+      type: object
+      required:
+        - results
+        - total_found
+        - search_criteria
+        - recommendations
+      properties:
+        results:
+          type: array
+          items:
+            $ref: '#/components/schemas/SearchResultItem'
+          description: Search results ranked by relevance
+        total_found:
+          type: integer
+          description: Total number of results found
+        search_criteria:
+          type: object
+          description: Applied search criteria
+        recommendations:
+          type: array
+          items:
+            $ref: '#/components/schemas/SearchResultItem'
+          description: Top 3 recommendations
+    ProductDetail:
+      type: object
+      required:
+        - id
+        - name
+        - group_id
+        - monthly_price
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        group_id:
+          type: string
+        slug:
+          type: string
+        description:
+          type: string
+        monthly_price:
+          type: number
+        activation_fee:
+          type: number
+        device_fee:
+          type: number
+        installation_fee:
+          type: number
+        specs:
+          type: object
+    OptionBase:
+      type: object
+      required:
+        - id
+        - name
+        - monthly_price
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        description:
+          type: string
+        monthly_price:
+          type: number
+        activation_fee:
+          type: number
+        device_fee:
+          type: number
+    GroupBase:
+      type: object
+      required:
+        - id
+        - name
+        - slug
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        slug:
+          type: string
+        max_products:
+          type: integer
+        order:
+          type: integer
+    ProductSearchResponse:
+      type: object
+      required:
+        - products
+        - total_count
+      properties:
+        products:
+          type: array
+          items:
+            $ref: '#/components/schemas/ProductDetail'
+        total_count:
+          type: integer
+        filters_applied:
+          type: object
+    BundleValidationRequest:
+      type: object
+      required:
+        - product_ids
+      properties:
+        product_ids:
+          type: array
+          items:
+            type: string
+        option_ids:
+          type: array
+          items:
+            type: string
+    BundleValidationResponse:
+      type: object
+      required:
+        - is_valid
+      properties:
+        is_valid:
+          type: boolean
+        validation_errors:
+          type: array
+          items:
+            type: string
+        warnings:
+          type: array
+          items:
+            type: string
+    BundleCalculationRequest:
+      type: object
+      required:
+        - product_ids
+      properties:
+        product_ids:
+          type: array
+          items:
+            type: string
+        option_ids:
+          type: array
+          items:
+            type: string
+        duration_months:
+          type: integer
+          default: 24
+    BundleCalculation:
+      type: object
+      properties:
+        products:
+          type: array
+          items:
+            $ref: '#/components/schemas/ProductDetail'
+        options:
+          type: array
+          items:
+            $ref: '#/components/schemas/OptionBase'
+        base_monthly_total:
+          type: number
+        monthly_breakdown:
+          type: array
+          items:
+            type: object
+        summary:
+          type: object
+    PromotionListResponse:
+      type: object
+      properties:
+        promotions:
+          type: array
+          items:
+            type: object
+        total_count:
+          type: integer
+    HTTPValidationError:
+      type: object
+      properties:
+        detail:
+          type: array
+          items:
+            type: object
+tags:
+  - name: Root
+    description: API information
+  - name: Health
+    description: Health check
+  - name: Search
+    description: AI-powered unified search
+  - name: Products
+    description: Product management and search
+  - name: Options
+    description: Add-on options
+  - name: Groups
+    description: Product groups
+  - name: Bundles
+    description: Bundle validation and pricing
+  - name: Promotions
+    description: Active promotions
+
