@@ -7,9 +7,14 @@ The `/search` endpoint is a unified, intelligent search API designed specificall
 ## Endpoint
 
 ```
-POST /search
-Content-Type: application/json
+GET /search
 ```
+
+**Benefits of GET:**
+- ✅ RESTful and cacheable
+- ✅ Bookmarkable URLs
+- ✅ Easier to test in browser
+- ✅ Standard for search operations
 
 ## Key Features
 
@@ -24,36 +29,24 @@ Content-Type: application/json
 
 ## Request Format
 
+All parameters are passed as query parameters in the URL.
+
 ### Minimal Request (Natural Language)
 
-```json
-{
-  "query": "cheapest internet for family"
-}
+```
+GET /search?query=cheapest%20internet%20for%20family
 ```
 
 ### Structured Request
 
-```json
-{
-  "budget_max": 80,
-  "include_internet": true,
-  "include_mobile": true,
-  "family_size": 4,
-  "limit": 5
-}
+```
+GET /search?budget_max=80&include_internet=true&include_mobile=true&family_size=4&limit=5
 ```
 
 ### Combined Request
 
-```json
-{
-  "query": "fast internet with Netflix",
-  "budget_max": 100,
-  "internet_speed_min": 500,
-  "include_netflix": true,
-  "limit": 10
-}
+```
+GET /search?query=fast%20internet%20with%20Netflix&budget_max=100&internet_speed_min=500&include_netflix=true&limit=10
 ```
 
 ---
@@ -135,40 +128,32 @@ Content-Type: application/json
 
 ### 1. Budget-Focused
 
-```json
-{
-  "query": "cheapest internet plan"
-}
+```
+GET /search?query=cheapest%20internet%20plan
 ```
 
 **AI Agent Use Case:** User asks "What's the cheapest internet you have?"
 
 ### 2. Feature-Focused
 
-```json
-{
-  "query": "fast internet with sports channels"
-}
+```
+GET /search?query=fast%20internet%20with%20sports%20channels
 ```
 
 **AI Agent Use Case:** User says "I want fast internet to watch football"
 
 ### 3. Family-Focused
 
-```json
-{
-  "query": "family bundle with Netflix"
-}
+```
+GET /search?query=family%20bundle%20with%20Netflix
 ```
 
 **AI Agent Use Case:** User says "I need internet, mobile, and Netflix for my family"
 
 ### 4. Speed-Focused
 
-```json
-{
-  "query": "1000 Mbps internet"
-}
+```
+GET /search?query=1000%20Mbps%20internet
 ```
 
 **AI Agent Use Case:** User says "I need gigabit internet"
@@ -181,50 +166,32 @@ Content-Type: application/json
 
 **User Need:** Family of 4 needs internet and mobile under €90/month
 
-```json
-{
-  "budget_max": 90,
-  "include_internet": true,
-  "include_mobile": true,
-  "family_size": 4
-}
+```
+GET /search?budget_max=90&include_internet=true&include_mobile=true&family_size=4
 ```
 
 ### Example 2: Speed Requirement
 
 **User Need:** Fast internet (at least 500 Mbps) under €70
 
-```json
-{
-  "budget_max": 70,
-  "internet_speed_min": 500,
-  "include_internet": true
-}
+```
+GET /search?budget_max=70&internet_speed_min=500&include_internet=true
 ```
 
 ### Example 3: Complete Package
 
 **User Need:** Everything (Internet + Mobile + TV + Netflix)
 
-```json
-{
-  "include_internet": true,
-  "include_mobile": true,
-  "include_tv": true,
-  "include_netflix": true,
-  "budget_max": 120
-}
+```
+GET /search?include_internet=true&include_mobile=true&include_tv=true&include_netflix=true&budget_max=120
 ```
 
 ### Example 4: Mobile-Only
 
 **User Need:** Mobile plan with at least 60GB data
 
-```json
-{
-  "include_mobile": true,
-  "mobile_data_min": 60
-}
+```
+GET /search?include_mobile=true&mobile_data_min=60
 ```
 
 ---
@@ -271,12 +238,12 @@ import requests
 
 def search_subscriptions(user_message: str):
     # Parse user intent
-    search_request = parse_user_request(user_message)
+    search_params = parse_user_request(user_message)
     
-    # Call API
-    response = requests.post(
+    # Call API with GET request
+    response = requests.get(
         "https://your-api.com/search",
-        json=search_request
+        params=search_params
     )
     
     return response.json()
@@ -377,59 +344,40 @@ Results are scored 0-100 based on:
 
 **User:** "What internet plans do you have?"
 
-```json
-{
-  "query": "internet plans",
-  "include_internet": true
-}
+```
+GET /search?query=internet%20plans&include_internet=true
 ```
 
 ### Use Case 2: Comparison
 
 **User:** "Compare your mobile plans"
 
-```json
-{
-  "query": "compare mobile",
-  "include_mobile": true,
-  "limit": 5
-}
+```
+GET /search?query=compare%20mobile&include_mobile=true&limit=5
 ```
 
 ### Use Case 3: Budget Planning
 
 **User:** "What can I get for 50 euros?"
 
-```json
-{
-  "budget_max": 50,
-  "query": "what can I get for 50 euros"
-}
+```
+GET /search?budget_max=50&query=what%20can%20I%20get%20for%2050%20euros
 ```
 
 ### Use Case 4: Upgrade Recommendation
 
 **User:** "I have Start Fiber, what's better?"
 
-```json
-{
-  "query": "better than Start Fiber",
-  "internet_speed_min": 500,
-  "include_internet": true
-}
+```
+GET /search?query=better%20than%20Start%20Fiber&internet_speed_min=500&include_internet=true
 ```
 
 ### Use Case 5: Family Package
 
 **User:** "My family of 5 needs everything"
 
-```json
-{
-  "family_size": 5,
-  "include_internet": true,
-  "include_mobile": true,
-  "include_tv": true
-}
+```
+GET /search?family_size=5&include_internet=true&include_mobile=true&include_tv=true
 ```
 
 ---

@@ -4,7 +4,7 @@ Orange Belgium Subscription API
 FastAPI application for subscription bundle pricing and recommendations.
 
 Endpoints:
-- POST /search - AI-powered unified search (for AI agents)
+- GET /search - AI-powered unified search (for AI agents)
 - GET /products - Search products
 - GET /options - List available options
 - GET /groups - List product groups
@@ -85,7 +85,7 @@ async def root():
         "name": "Orange Belgium Subscription API",
         "version": "1.0.0",
         "endpoints": {
-            "search": "POST /search - AI-powered unified search",
+            "search": "GET /search - AI-powered unified search",
             "products": "/products",
             "options": "/options",
             "groups": "/groups",
@@ -148,14 +148,27 @@ async def health_check():
 # SEARCH ENDPOINT (AI Agent)
 # ----------------------------------------------------------------------------
 
-@app.post(
+@app.get(
     "/search",
     response_model=SearchResponse,
     tags=["Search"],
     summary="AI-powered unified search for products and bundles"
 )
 async def search(
-    request: SearchRequest,
+    query: Optional[str] = None,
+    budget_min: Optional[float] = None,
+    budget_max: Optional[float] = None,
+    internet_speed_min: Optional[int] = None,
+    mobile_data_min: Optional[int] = None,
+    include_tv: Optional[bool] = None,
+    include_mobile: Optional[bool] = None,
+    include_internet: Optional[bool] = None,
+    family_size: Optional[int] = None,
+    include_netflix: Optional[bool] = None,
+    include_sports: Optional[bool] = None,
+    sort_by: str = "relevance",
+    sort_order: str = "desc",
+    limit: int = 10,
     db: OrangeDatabase = Depends(get_database)
 ):
     """
@@ -171,9 +184,9 @@ async def search(
     - "fastest internet with sports channels"
     
     ## Structured Search Examples:
-    - Budget-based: `{"budget_max": 80, "include_internet": true}`
-    - Speed-based: `{"internet_speed_min": 500, "budget_max": 70}`
-    - Family: `{"family_size": 4, "include_mobile": true, "include_tv": true}`
+    - Budget-based: `?budget_max=80&include_internet=true`
+    - Speed-based: `?internet_speed_min=500&budget_max=70`
+    - Family: `?family_size=4&include_mobile=true&include_tv=true`
     
     ## Response:
     Returns up to `limit` results ranked by relevance score (0-100).
@@ -198,18 +211,18 @@ async def search(
         
         # Perform search
         results = search_engine.search(
-            query=request.query,
-            budget_max=request.budget_max,
-            budget_min=request.budget_min,
-            internet_speed_min=request.internet_speed_min,
-            mobile_data_min=request.mobile_data_min,
-            include_tv=request.include_tv,
-            include_mobile=request.include_mobile,
-            include_internet=request.include_internet,
-            family_size=request.family_size,
-            include_netflix=request.include_netflix,
-            include_sports=request.include_sports,
-            limit=request.limit
+            query=query,
+            budget_max=budget_max,
+            budget_min=budget_min,
+            internet_speed_min=internet_speed_min,
+            mobile_data_min=mobile_data_min,
+            include_tv=include_tv,
+            include_mobile=include_mobile,
+            include_internet=include_internet,
+            family_size=family_size,
+            include_netflix=include_netflix,
+            include_sports=include_sports,
+            limit=limit
         )
         
         # Convert to response models
@@ -235,17 +248,19 @@ async def search(
         
         # Build search criteria dict
         criteria_applied = {
-            "query": request.query,
-            "budget_max": request.budget_max,
-            "budget_min": request.budget_min,
-            "internet_speed_min": request.internet_speed_min,
-            "mobile_data_min": request.mobile_data_min,
-            "include_tv": request.include_tv,
-            "include_mobile": request.include_mobile,
-            "include_internet": request.include_internet,
-            "family_size": request.family_size,
-            "include_netflix": request.include_netflix,
-            "include_sports": request.include_sports
+            "query": query,
+            "budget_max": budget_max,
+            "budget_min": budget_min,
+            "internet_speed_min": internet_speed_min,
+            "mobile_data_min": mobile_data_min,
+            "include_tv": include_tv,
+            "include_mobile": include_mobile,
+            "include_internet": include_internet,
+            "family_size": family_size,
+            "include_netflix": include_netflix,
+            "include_sports": include_sports,
+            "sort_by": sort_by,
+            "sort_order": sort_order
         }
         # Remove None values
         criteria_applied = {k: v for k, v in criteria_applied.items() if v is not None}

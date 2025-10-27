@@ -47,7 +47,7 @@ paths:
                   groups_count:
                     type: integer
   /search:
-    post:
+    get:
       tags:
         - Search
       summary: AI-powered unified search for products and bundles
@@ -57,6 +57,15 @@ paths:
         Search for products, bundles, and options using natural language queries or
         structured criteria. Returns ranked results with relevance scores and recommendations.
         
+        ## Features
+        
+        * **Natural Language Support**: Use conversational queries
+        * **Multi-criteria Filtering**: Combine budget, speed, features, and more
+        * **Intelligent Ranking**: Results scored 0-100 by relevance
+        * **Bundle Generation**: Automatic multi-product combinations
+        * **Promotional Savings**: Real-time discount calculations
+        * **Top Recommendations**: Best 3 options highlighted
+        
         ## Natural Language Examples:
         - "cheapest internet for a family of 4"
         - "mobile plan with at least 60GB"
@@ -64,29 +73,162 @@ paths:
         - "fastest internet with sports channels"
         
         ## Structured Search Examples:
-        - Budget-based: `{"budget_max": 80, "include_internet": true}`
-        - Speed-based: `{"internet_speed_min": 500, "budget_max": 70}`
-        - Family: `{"family_size": 4, "include_mobile": true, "include_tv": true}`
+        - Budget-based: `?budget_max=80&include_internet=true`
+        - Speed-based: `?internet_speed_min=500&budget_max=70`
+        - Family: `?family_size=4&include_mobile=true&include_tv=true`
         
-        ## Response:
+        ## Available Filters
+        
+        ### Price & Budget
+        - Budget range (min/max monthly price)
+        
+        ### Service Requirements
+        - Internet speed minimum (Mbps)
+        - Mobile data minimum (GB)
+        - Service type filters (TV, Mobile, Internet)
+        
+        ### Features & Add-ons
+        - Netflix inclusion
+        - Sports channels
+        
+        ### Household
+        - Family size for bundle recommendations
+        
+        ## Response
         Returns up to `limit` results ranked by relevance score (0-100).
-        Top 3 results are marked as `recommended: true`.
-      operationId: search_search_post
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/SearchRequest'
-        required: true
+        Top 3 results are marked as `recommended: true` and included in separate recommendations array.
+      operationId: search_search_get
+      parameters:
+        # Natural Language Query
+        - name: query
+          in: query
+          description: |
+            Natural language search query (e.g., "cheapest internet for family", "mobile with 60GB").
+            Can be combined with structured filters for refined results.
+          schema:
+            type: string
+          example: "cheapest internet for family of 4"
+        
+        # Price & Budget
+        - name: budget_min
+          in: query
+          description: Minimum monthly budget in euros
+          schema:
+            type: number
+            minimum: 0
+          example: 30
+        - name: budget_max
+          in: query
+          description: Maximum monthly budget in euros
+          schema:
+            type: number
+            minimum: 0
+          example: 100
+        
+        # Internet Specifications
+        - name: internet_speed_min
+          in: query
+          description: Minimum internet speed in Mbps (e.g., 100, 300, 500, 1000)
+          schema:
+            type: integer
+            minimum: 0
+          example: 300
+        
+        # Mobile Specifications
+        - name: mobile_data_min
+          in: query
+          description: Minimum mobile data in GB (e.g., 10, 20, 40, 60, unlimited)
+          schema:
+            type: integer
+            minimum: 0
+          example: 40
+        
+        # Service Type Filters
+        - name: include_tv
+          in: query
+          description: Must include TV service
+          schema:
+            type: boolean
+          example: true
+        - name: include_mobile
+          in: query
+          description: Must include mobile service
+          schema:
+            type: boolean
+          example: true
+        - name: include_internet
+          in: query
+          description: Must include internet service
+          schema:
+            type: boolean
+          example: true
+        
+        # Household
+        - name: family_size
+          in: query
+          description: Number of people in household (used for bundle recommendations)
+          schema:
+            type: integer
+            minimum: 1
+            maximum: 10
+          example: 4
+        
+        # Features & Add-ons
+        - name: include_netflix
+          in: query
+          description: Must include Netflix subscription
+          schema:
+            type: boolean
+          example: true
+        - name: include_sports
+          in: query
+          description: Must include sports channels
+          schema:
+            type: boolean
+          example: true
+        
+        # Sorting
+        - name: sort_by
+          in: query
+          description: Field to sort results by
+          schema:
+            type: string
+            enum: [relevance, price, speed, data]
+            default: relevance
+        - name: sort_order
+          in: query
+          description: Sort order (ascending or descending)
+          schema:
+            type: string
+            enum: [asc, desc]
+            default: desc
+        
+        # Pagination
+        - name: limit
+          in: query
+          description: Maximum number of results to return
+          schema:
+            type: integer
+            minimum: 1
+            maximum: 50
+            default: 10
+          example: 10
+      
       responses:
         '200':
-          description: Successful Response
+          description: Successful search results with metadata and ranked items
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/SearchResponse'
-        '422':
-          description: Validation Error
+        '400':
+          description: Bad request - validation error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+        '500':
+          description: Internal server error
           content:
             application/json:
               schema:
