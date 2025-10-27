@@ -268,6 +268,60 @@ class EligibilityCheck(BaseModel):
 
 
 # ============================================================================
+# SEARCH MODELS
+# ============================================================================
+
+class SearchRequest(BaseModel):
+    """Request model for intelligent search endpoint"""
+    query: Optional[str] = Field(None, description="Natural language query (e.g., 'cheapest internet for family')")
+    budget_max: Optional[float] = Field(None, description="Maximum monthly budget in euros")
+    budget_min: Optional[float] = Field(None, description="Minimum monthly budget in euros")
+    internet_speed_min: Optional[int] = Field(None, description="Minimum internet speed in Mbps")
+    mobile_data_min: Optional[int] = Field(None, description="Minimum mobile data in GB")
+    include_tv: Optional[bool] = Field(None, description="Must include TV service")
+    include_mobile: Optional[bool] = Field(None, description="Must include mobile service")
+    include_internet: Optional[bool] = Field(None, description="Must include internet service")
+    family_size: Optional[int] = Field(None, description="Number of people in household")
+    include_netflix: Optional[bool] = Field(None, description="Must include Netflix")
+    include_sports: Optional[bool] = Field(None, description="Must include sports channels")
+    limit: int = Field(10, description="Maximum number of results to return")
+
+
+class SearchResultItem(BaseModel):
+    """A single search result"""
+    result_id: str = Field(..., description="Unique identifier for this result")
+    result_type: str = Field(..., description="Type: 'product', 'bundle', or 'option'")
+    name: str = Field(..., description="Name of the product/bundle")
+    description: str = Field(..., description="Description")
+    monthly_price: Decimal = Field(..., description="Total monthly price")
+    relevance_score: float = Field(..., description="Relevance score (0-100)")
+    match_reasons: List[str] = Field(..., description="Why this result matches the search")
+    products: Optional[List[ProductDetail]] = Field(None, description="Products included")
+    options: Optional[List[OptionBase]] = Field(None, description="Options included")
+    bundle_details: Optional[Dict[str, Any]] = Field(None, description="Bundle pricing breakdown")
+    promotional_savings: Optional[Decimal] = Field(None, description="Monthly promotional savings")
+    recommended: bool = Field(False, description="Whether this is a top recommendation")
+    
+    class Config:
+        json_encoders = {
+            Decimal: lambda v: float(v)
+        }
+
+
+class SearchResponse(BaseModel):
+    """Response from search endpoint"""
+    results: List[SearchResultItem] = Field(..., description="Search results ranked by relevance")
+    total_found: int = Field(..., description="Total number of results found")
+    search_criteria: Dict[str, Any] = Field(..., description="Applied search criteria")
+    recommendations: List[SearchResultItem] = Field(..., description="Top 3 recommendations")
+    
+    class Config:
+        json_encoders = {
+            Decimal: lambda v: float(v)
+        }
+
+
+# ============================================================================
 # CONFIGURATION
 # ============================================================================
 

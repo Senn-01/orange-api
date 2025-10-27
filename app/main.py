@@ -4,6 +4,7 @@ Orange Belgium Subscription API
 FastAPI application for subscription bundle pricing and recommendations.
 
 Endpoints:
+- POST /search - AI-powered unified search (for AI agents)
 - GET /products - Search products
 - GET /options - List available options
 - GET /groups - List product groups
@@ -28,10 +29,12 @@ from app.models import (
     BundleValidationRequest, BundleValidationResponse,
     PromotionListResponse, ErrorResponse,
     ProductDetail, OptionBase, GroupBase,
-    BundleContext
+    BundleContext,
+    SearchRequest, SearchResponse, SearchResultItem
 )
 from app.database import OrangeDatabase
 from app.calculator import calculate_bundle_pricing
+from app.search import SearchEngine
 
 
 # ============================================================================
@@ -82,6 +85,7 @@ async def root():
         "name": "Orange Belgium Subscription API",
         "version": "1.0.0",
         "endpoints": {
+            "search": "POST /search - AI-powered unified search",
             "products": "/products",
             "options": "/options",
             "groups": "/groups",
@@ -138,6 +142,126 @@ async def health_check():
             "timestamp": datetime.now().isoformat(),
             "error": str(e)
         }
+
+
+# ----------------------------------------------------------------------------
+# SEARCH ENDPOINT (AI Agent)
+# ----------------------------------------------------------------------------
+
+@app.post(
+    "/search",
+    response_model=SearchResponse,
+    tags=["Search"],
+    summary="AI-powered unified search for products and bundles"
+)
+async def search(
+    request: SearchRequest,
+    db: OrangeDatabase = Depends(get_database)
+):
+    """
+    **Unified search endpoint designed for AI agents.**
+    
+    Search for products, bundles, and options using natural language queries or
+    structured criteria. Returns ranked results with relevance scores and recommendations.
+    
+    ## Natural Language Examples:
+    - "cheapest internet for a family of 4"
+    - "mobile plan with at least 60GB"
+    - "bundle with Netflix under 100 euros"
+    - "fastest internet with sports channels"
+    
+    ## Structured Search Examples:
+    - Budget-based: `{"budget_max": 80, "include_internet": true}`
+    - Speed-based: `{"internet_speed_min": 500, "budget_max": 70}`
+    - Family: `{"family_size": 4, "include_mobile": true, "include_tv": true}`
+    
+    ## Response:
+    Returns up to `limit` results ranked by relevance score (0-100).
+    Top 3 results are marked as `recommended: true`.
+    
+    Each result includes:
+    - Complete product/bundle details
+    - Monthly pricing with promotional discounts
+    - Match reasons explaining why it matches your criteria
+    - Bundle breakdowns (for bundle results)
+    
+    ## Use Cases for AI Agents:
+    1. **Product Discovery**: "Show me all internet plans"
+    2. **Budget Planning**: "What can I get for 50 euros?"
+    3. **Feature Matching**: "I need fast internet and Netflix"
+    4. **Family Recommendations**: "Best bundle for a family of 5"
+    5. **Comparison**: Get top options and compare pricing/features
+    """
+    try:
+        # Initialize search engine
+        search_engine = SearchEngine(db)
+        
+        # Perform search
+        results = search_engine.search(
+            query=request.query,
+            budget_max=request.budget_max,
+            budget_min=request.budget_min,
+            internet_speed_min=request.internet_speed_min,
+            mobile_data_min=request.mobile_data_min,
+            include_tv=request.include_tv,
+            include_mobile=request.include_mobile,
+            include_internet=request.include_internet,
+            family_size=request.family_size,
+            include_netflix=request.include_netflix,
+            include_sports=request.include_sports,
+            limit=request.limit
+        )
+        
+        # Convert to response models
+        result_items = []
+        for result in results:
+            result_items.append(SearchResultItem(
+                result_id=result.result_id,
+                result_type=result.result_type,
+                name=result.name,
+                description=result.description,
+                monthly_price=result.monthly_price,
+                relevance_score=result.relevance_score,
+                match_reasons=result.match_reasons,
+                products=result.products,
+                options=result.options,
+                bundle_details=result.bundle_details,
+                promotional_savings=result.promotional_savings,
+                recommended=result.recommended
+            ))
+        
+        # Extract recommendations (top 3)
+        recommendations = [r for r in result_items if r.recommended]
+        
+        # Build search criteria dict
+        criteria_applied = {
+            "query": request.query,
+            "budget_max": request.budget_max,
+            "budget_min": request.budget_min,
+            "internet_speed_min": request.internet_speed_min,
+            "mobile_data_min": request.mobile_data_min,
+            "include_tv": request.include_tv,
+            "include_mobile": request.include_mobile,
+            "include_internet": request.include_internet,
+            "family_size": request.family_size,
+            "include_netflix": request.include_netflix,
+            "include_sports": request.include_sports
+        }
+        # Remove None values
+        criteria_applied = {k: v for k, v in criteria_applied.items() if v is not None}
+        
+        return SearchResponse(
+            results=result_items,
+            total_found=len(result_items),
+            search_criteria=criteria_applied,
+            recommendations=recommendations
+        )
+    
+    except Exception as e:
+        raise HTTPException(
+            status_code=500,
+            detail=f"Search failed: {str(e)}"
+        )
 
 
 # ----------------------------------------------------------------------------
