@@ -139,7 +139,7 @@ If you prefer manual setup or need custom configuration:
    - **Database:** orange_belgium
    - **User:** orange_user
    - **Region:** Frankfurt (same as web service)
-   - **Plan:** Starter ($7/mo)
+   - **Plan:** basic-1gb (~$7/mo) - New flexible plan
 
 3. Click **"Create Database"**
 
@@ -475,10 +475,12 @@ psql "postgresql://user:pass@host:5432/db" < backup.sql
 
 **Upgrade database:**
 1. Dashboard → orange-db → Settings → Plan
-2. Options:
-   - **Starter:** €7/mo (1 GB storage)
-   - **Standard:** €21/mo (10 GB storage)
-   - **Pro:** €90/mo (100 GB storage)
+2. New flexible plan options:
+   - **basic-1gb:** ~€7/mo (1 GB storage)
+   - **basic-2gb:** ~€10/mo (2 GB storage)
+   - **basic-4gb:** ~€15/mo (4 GB storage)
+   - **standard-8gb:** ~€25/mo (8 GB storage, higher compute)
+   - **pro-16gb and higher:** For production scale
 
 ### Horizontal Scaling (Multiple Instances)
 
@@ -574,25 +576,25 @@ Dashboard → orange-api → Metrics
 
 ## Cost Optimization
 
-### Development Setup (€14/month)
+### Development Setup (~€14/month)
 ```
 Web Service: Starter (€7)
-Database: Starter (€7)
-Total: €14/month
+Database: basic-1gb (~€7)
+Total: ~€14/month
 ```
 
-### Production Setup (€42/month)
+### Production Setup (~€46/month)
 ```
 Web Service: Standard (€21)
-Database: Standard (€21)
-Total: €42/month
+Database: standard-8gb (~€25)
+Total: ~€46/month
 ```
 
-### High-Traffic Setup (€175/month)
+### High-Traffic Setup (~€185/month)
 ```
 Web Service: Pro (€85)
-Database: Pro (€90)
-Total: €175/month
+Database: pro-16gb (~€100)
+Total: ~€185/month
 ```
 
 ### Free Tier (Testing Only)

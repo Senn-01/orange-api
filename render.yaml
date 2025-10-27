@@ -46,7 +46,7 @@ databases:
     databaseName: orange_belgium
     user: orange_user
     region: frankfurt  # Match web service region
-    plan: starter  # €7/month | includes 1GB storage
+    plan: basic-1gb  # New flexible plan | ~$7/month | 1GB storage
     ipAllowList: []  # Empty = allow only Render services
 
 # ============================================================================
@@ -64,7 +64,7 @@ databases:
 #
 # 2. PostgreSQL:
 #    - Name: orange-db
-#    - Plan: Starter ($7/mo)
+#    - Plan: basic-1gb (~$7/mo) - New flexible plan
 #    - Connect to web service via internal connection string
 #
 # 3. Environment Variables:
